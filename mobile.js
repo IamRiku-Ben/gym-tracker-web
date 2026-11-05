@@ -1,18 +1,19 @@
-import {buildExerciseLibrary,metadataLine} from './exercise-metadata.js?v=0.5.1';
-import { catalog,byId, dayNames, plans } from './catalog.js?v=0.5.1';
-import {workoutFromSession,sessionFromWorkout} from './form-model.js?v=0.5.1';
-import {ArchiveSync} from './archive-sync.js?v=0.5.1';
-import {validate as validateWorkout,pathFor,today} from './core.js?v=0.5.1';
-import {defaultPlanData,validatePlans,validateEditorDraft,scheduledUnit,sessionForUnit,canRefreshTemplate,recordPlanChange,planPath} from './training-plans.js?v=0.5.1';
-import {PlanEditor} from './plan-editor.js?v=0.5.1';
-import {syncPlanRecord,ensureExerciseRegistry} from './plan-sync.js?v=0.5.1';
-import {createConfirmation} from './confirm-action.js?v=0.5.1';
+import {previousExerciseFrom,prefillPreviousSets} from './training-history.js?v=0.6.0';
+import {buildExerciseLibrary,metadataLine} from './exercise-metadata.js?v=0.6.0';
+import { catalog,byId, dayNames, plans } from './catalog.js?v=0.6.0';
+import {workoutFromSession,sessionFromWorkout} from './form-model.js?v=0.6.0';
+import {ArchiveSync} from './archive-sync.js?v=0.6.0';
+import {validate as validateWorkout,pathFor,today} from './core.js?v=0.6.0';
+import {defaultPlanData,validatePlans,validateEditorDraft,scheduledUnit,sessionForUnit,canRefreshTemplate,recordPlanChange,planPath} from './training-plans.js?v=0.6.0';
+import {PlanEditor} from './plan-editor.js?v=0.6.0';
+import {syncPlanRecord,ensureExerciseRegistry} from './plan-sync.js?v=0.6.0';
+import {createConfirmation} from './confirm-action.js?v=0.6.0';
 const directory=await fetch('./exercise-directory.json').then(r=>{if(!r.ok)throw Error('Übungskatalog fehlt');return r.json()});
 const exerciseLibrary=buildExerciseLibrary(catalog,directory,byId);
 const seedHistory=[];
 const schema=await fetch('./workout.schema.json').then(r=>{if(!r.ok)throw Error('Schema fehlt');return r.json()});
 let archive, syncMessage='Noch nicht verbunden';
-let planRecord,planEditor,syncRunning=false,localActionBusy=0;
+let planRecord,planEditor,syncRunning=false,localActionBusy=0,unitMenuOpen=false;
 const confirmAction=createConfirmation(()=>localActionBusy++,()=>localActionBusy--);
 
 const DB_NAME = 'gym-tracker-offline-v1';
@@ -75,23 +76,16 @@ function historyCollection() {
         map.set(s.date, toWorkout(s, 'production'));
     return [...map.values()].sort((a, b) => b.date.localeCompare(a.date));
 }
-function previousExercise(id, beforeDate, basis) {
-    for (const w of historyCollection()) {
-        if (w.date >= beforeDate)
-            continue;
-        const exercise = w.exercises.find(x => x.exercise_id === id&&(!basis||x.load_basis===basis));
-        if (exercise)
-            return { date: w.date, exercise };
-    }
-    return null;
-}
+function previousExercise(id,beforeDate,basis){return previousExerciseFrom(historyCollection(),id,beforeDate,basis,byId);}
 function makeSession(day,unit=scheduledUnit(planRecord.data,day)){return sessionForUnit(day,unit,byId,previousExercise);}
-function unitSelector(){const normal=scheduledUnit(planRecord.data,date);return `<section class="card training-unit-selector"><label for="training-unit">Einheit für diesen Tag</label><select id="training-unit"><option value="__current">${esc(session.unitIcon||'🏋️')} ${esc(session.sessionName)} · aktuell</option>${planRecord.data.units.map(u=>`<option value="${u.id}">${u.icon} ${esc(u.name)}</option>`).join('')}<option value="__rest">🌿 Ruhetag</option></select><div><p class="muted">${session.manualUnitOverride?'Nur für diesen Tag geändert. ':''}Normalerweise ${esc(dayNames[dayOf(date)])}: <b>${esc(normal?.name||'Ruhetag')}</b></p><button class="quiet-btn" data-action="unit-standard">Wochenplan übernehmen</button></div></section>`;}
+function unitSelector(){return `<section class="card training-unit-selector"><span class="label-small">EINHEIT FÜR DIESEN TAG</span><div class="selected-training-unit"><strong>${esc(session.unitIcon||'🏋️')} ${esc(session.sessionName)}</strong><button type="button" class="quiet-btn" data-action="unit-menu" aria-expanded="${unitMenuOpen}" aria-controls="unit-menu">${unitMenuOpen?'Auswahl schließen':'Einheit ändern'}</button></div>${session.manualUnitOverride?'<p class="muted">Nur für diesen Tag geändert.</p>':''}${unitMenuOpen?`<div id="unit-menu" class="unit-menu"><label for="training-unit">Andere Einheit auswählen</label><select id="training-unit"><option value="__current">Bitte auswählen …</option>${planRecord.data.units.map(u=>`<option value="${u.id}">${u.icon} ${esc(u.name)}</option>`).join('')}<option value="__rest">🌿 Ruhetag</option></select><button type="button" class="quiet-btn" data-action="unit-standard">Einheit aus dem Wochenplan übernehmen</button></div>`:''}</section>`;}
+
 async function selectDate(next) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(next) || Number.isNaN(Date.parse(next + 'T12:00:00')))
         return;
     await saveTail;
     date = next;
+    unitMenuOpen=false;
     await refreshCollections();
     let existing=await getRecord('sessions',date);
     if(existing&&!existing.sessionName&&!existing.notes&&!existing.exercises.length&&!existing.baseSha)existing=null;
@@ -99,6 +93,8 @@ async function selectDate(next) {
     if(existing&&canRefreshTemplate(existing)&&existing.planSignature!==JSON.stringify(scheduledUnit(planRecord.data,date))){existing=makeSession(date);refreshed=true;}
     const historical=await getRecord('history',date),sha=await getRecord('settings','sha:'+date);
     session=existing||(historical?sessionFromWorkout(historical,byId,sha?.sha||null):makeSession(date));
+    const suggested=prefillPreviousSets(session,previousExercise);
+    if(JSON.stringify(suggested.exercises)!==JSON.stringify(session.exercises)){session=suggested;refreshed=true;}
     showFazit = session.status === 'completed';
     if (!existing||refreshed)
         await putRecord('sessions', session);
@@ -142,7 +138,7 @@ function previousLabel(id) {
     return `${new Date(previous.date + 'T12:00').toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' })} · ${weights} kg · ${sets.map(s => s.reps).join('/')}`;
 }
 function createHeader() {
-    return `<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-copy"><strong>GYM TRACKER</strong><small>MOBILE · V0.5</small></span></div><div class="topbar-right"><span class="connection ${navigator.onLine ? 'online' : 'offline'}" id="network-indicator"><span class="dot"></span>${navigator.onLine ? 'Online' : 'Offline'}</span><span id="save-status" class="save-status good">Lokal gespeichert</span></div></div></header>`;
+    return `<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-copy"><strong>GYM TRACKER</strong><small>MOBILE · V0.6</small></span></div><div class="topbar-right"><span class="connection ${navigator.onLine ? 'online' : 'offline'}" id="network-indicator"><span class="dot"></span>${navigator.onLine ? 'Online' : 'Offline'}</span><span id="save-status" class="save-status good">Lokal gespeichert</span></div></div></header>`;
 }
 function createNav() {
     const tabs = [['training', 'Training', '▦'], ['plans','Pläne','▤'], ['history', 'Verlauf', '▥'], ['settings', 'Einstellungen', '⚙']];
@@ -153,11 +149,10 @@ function createTraining() {
     return `<section class="page training">
  <div class="headline-row"><div><div class="eyebrow">DEIN TRAINING <span>·</span> ${esc(dayNames[dayOf(date)].toUpperCase())}</div><h1>${esc(session.unitIcon||'🏋️')} ${esc(session.sessionName)}</h1><p class="muted">${esc(session.unitDescription||'Deine Trainingseinheit')}</p></div><span class="version-tag">LOKALER ${session.status === 'completed' ? 'ABSCHLUSS' : 'ENTWURF'}</span></div>
  <div class="date-strip"><button type="button" data-action="week" data-offset="-7" class="iconbutton" aria-label="Vorige Woche">←</button><label class="date-input-wrap"><span>TRAININGSDATUM</span><input id="date-picker" type="date" value="${esc(date)}" aria-label="Trainingsdatum"></label><button type="button" data-action="week" data-offset="7" class="iconbutton" aria-label="Nächste Woche">→</button></div>
- <div class="day-selector">${[1, 2, 3, 4, 5, 6,0].map(i => `<button type="button" data-action="day" data-day="${i}" class="day-chip ${dayOf(date) === i ? 'selected' : ''}">${['SO', 'MO', 'DI', 'MI', 'DO', 'FR', 'SA'][i]}</button>`).join('')}</div>
  ${unitSelector()}
  <div class="overview"><div class="metric"><span>FORTSCHRITT</span><strong>${c.percentage}<small>%</small></strong></div><div class="metric"><span>ERLEDIGTE SÄTZE</span><strong>${c.done}<small> / ${c.total}</small></strong></div><div class="metric"><span>ÜBUNGEN AKTIV</span><strong>${c.exercises}</strong></div><progress class="progress" aria-label="Trainingsfortschritt" value="${c.percentage}" max="100"></progress></div>
  ${session.status === 'completed' ? `<div class="completed-banner"><span class="badge-check">✓</span><div><strong>Training abgeschlossen</strong><p>Dein Training liegt im lokalen Speicher. ${session.syncPending?'Es wartet auf die Synchronisierung.':session.baseSha?'Es ist mit deinem privaten Archiv synchronisiert.':'Es ist lokal gespeichert.'}</p></div><button class="button outline" data-action="resume">Bearbeiten</button></div>` : ''}
- ${!session.exercises.length ? `<div class="empty-state"><div class="empty-icon">☾</div><h2>Heute ist Platz für Erholung.</h2><p>Du möchtest trainieren? Wähle oben eine andere Einheit oder lege unter Pläne eine an.</p></div>` : session.exercises.map((e, i) => createExercise(e, i)).join('')}
+ ${!session.exercises.length ? `<div class="empty-state"><div class="empty-icon">☾</div><h2>Heute ist Platz für Erholung.</h2><p>Du möchtest trainieren? Wähle über „Einheit ändern“ eine andere Einheit oder lege unter Pläne eine an.</p></div>` : session.exercises.map((e, i) => createExercise(e, i)).join('')}
  <section class="session-notes card"><div class="section-heading"><div class="eyebrow">TRAININGSNOTIZ</div><h2>Wie lief die Einheit?</h2></div><textarea data-field="notes" data-scope="session" rows="3" placeholder="Energie, Schlaf, Technik, Beschwerden oder Besonderheiten …">${esc(session.notes)}</textarea></section>
  ${session.status === 'completed' && showFazit ? createFazit() : ''}
  <div class="action-dock"><div class="dock-info"><strong>${c.done} von ${c.total} Sätzen</strong><span id="dock-hint">Jede Änderung wird automatisch lokal gesichert</span></div><div class="dock-buttons"><button type="button" class="button outline" data-action="export">JSON exportieren</button>${session.status === 'completed' ? '<button type="button" class="button primary" data-action="show-fazit">Fazit ansehen</button>' : `<button type="button" class="button primary" data-action="complete" ${c.done === 0 ? 'disabled' : ''}>Training abschließen ↗</button>`}</div></div>
@@ -217,7 +212,7 @@ function createSettings() {
  <div class="info-box"><strong>Mobile Formularbasis</strong><p>Funktioniert: Training, Notizen, Referenzwerte, Offline-Speicherung, lokales Fazit und JSON-Export. GitHub-Sync ist verfügbar. Ein automatisches KI-Fazit und Hintergrund-Push sind nicht enthalten.</p></div></section>`;
 }
 function render() {
-    app.innerHTML = `${createHeader()}<div class="layout"><main>${currentPage === 'training' ? createTraining() :currentPage==='plans'?planEditor.view(planRecord): currentPage === 'history' ? createHistory() : createSettings()}</main><div class="footer-note">GYM TRACKER V0.5 · LOKAL + PRIVATES ARCHIV · <span>BUILT FOR PROGRESS</span></div></div>${createNav()}${toastMessage ? `<div class="toast" role="status">${esc(toastMessage)}</div>` : ''}`;
+    app.innerHTML = `${createHeader()}<div class="layout"><main>${currentPage === 'training' ? createTraining() :currentPage==='plans'?planEditor.view(planRecord): currentPage === 'history' ? createHistory() : createSettings()}</main><div class="footer-note">GYM TRACKER V0.6 · LOKAL + PRIVATES ARCHIV · <span>BUILT FOR PROGRESS</span></div></div>${createNav()}${toastMessage ? `<div class="toast" role="status">${esc(toastMessage)}</div>` : ''}`;
     updateSaveIndicator();
     if(syncRunning)app.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
 }
@@ -255,6 +250,7 @@ async function handleClick(event) {
     const action = target.dataset.action;
     if(action?.startsWith('plans-conflict-')){await handlePlanConflict(action);return;}
     if(await planEditor.action(action,target,planRecord))return;
+    if(action==='unit-menu'){unitMenuOpen=!unitMenuOpen;render();if(unitMenuOpen)document.getElementById('training-unit')?.focus();return;}
     if(action==='unit-standard'){await replaceUnitForDate(scheduledUnit(planRecord.data,date),false);return;}
     if(['connect','disconnect','sync','conflict-export','conflict-remote','conflict-local'].includes(action)){await handleArchive(action,target.dataset.date);return;}
     const id = target.dataset.id || '', e = getExercise(id), index = Number(target.dataset.index || 0);
@@ -268,13 +264,6 @@ async function handleClick(event) {
     if (action === 'week') {
         const d = new Date(date + 'T12:00:00');
         d.setDate(d.getDate() + Number(target.dataset.offset));
-        await selectDate(localDate(d));
-        return;
-    }
-    if (action === 'day') {
-        const d = new Date(date + 'T12:00:00');
-        const current = dayOf(date) || 7,next=Number(target.dataset.day)||7;
-        d.setDate(d.getDate() + next - current);
         await selectDate(localDate(d));
         return;
     }
@@ -547,7 +536,7 @@ async function runSync(){
  syncRunning=true;
  syncMessage='Synchronisierung läuft …';
  render();app.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
- try{await saveTail;await archive.client.verify();await refreshCollections();const used=[...planRecord.data.units.flatMap(u=>u.exercises.map(e=>e.exerciseId)),...otherSessions.flatMap(s=>s.exercises.map(e=>e.id))];await ensureExerciseRegistry(archive.client,used,byId);await archive.sync();await saveTail;const synced=await syncPlanRecord(archive.client,planRecord,byId);await putRecord('settings',synced);planRecord=synced;await refreshCurrentTemplate();await refreshCollections();syncMessage=otherSessions.some(s=>s.conflict)||planRecord.conflict?'Konflikt erkannt. Bitte Versionen unter Pläne bzw. Einstellungen prüfen.':'Trainingsdaten und Pläne synchronisiert.';}
+ try{await saveTail;await archive.client.verify();await refreshCollections();const used=[...planRecord.data.units.flatMap(u=>u.exercises.map(e=>e.exerciseId)),...otherSessions.flatMap(s=>s.exercises.map(e=>e.id))];await ensureExerciseRegistry(archive.client,used,byId);await archive.sync();await saveTail;const synced=await syncPlanRecord(archive.client,planRecord,byId);await putRecord('settings',synced);planRecord=synced;await refreshCollections();await refreshCurrentTemplate();syncMessage=otherSessions.some(s=>s.conflict)||planRecord.conflict?'Konflikt erkannt. Bitte Versionen unter Pläne bzw. Einstellungen prüfen.':'Trainingsdaten und Pläne synchronisiert.';}
  catch(e){syncMessage=e.message;}
  finally{syncRunning=false;}
  render();tell(syncMessage);
@@ -625,8 +614,10 @@ async function commitPlanData(data){
 }
 async function refreshCurrentTemplate(){
  if(!session||!canRefreshTemplate(session))return;
- const unit=scheduledUnit(planRecord.data,date);if(session.planSignature===JSON.stringify(unit))return;
- const next=makeSession(date,unit);await queueRecord('sessions',next);session=next;
+ const unit=scheduledUnit(planRecord.data,date);
+ const next=session.planSignature===JSON.stringify(unit)?prefillPreviousSets(session,previousExercise):makeSession(date,unit);
+ if(JSON.stringify(next)===JSON.stringify(session))return;
+ await queueRecord('sessions',next);session=next;
 }
 async function replaceUnitForDate(unit,manual){
  localActionBusy++;try{
@@ -634,7 +625,7 @@ async function replaceUnitForDate(unit,manual){
  const protectedEntry=session.touched||session.baseSha||session.status==='completed'||session.exercises.some(e=>e.notes||e.sets.some(s=>s.done))||session.notes;
  if(protectedEntry){if(!await confirmAction('Die Einheit für diesen Tag durch ein neues Formular ersetzen? Vorhandene Eingaben werden vorher als Backup heruntergeladen. Dein normaler Wochenplan bleibt unverändert.')){render();return;}downloadJson(date+'-vor-einheitenwechsel.json',session);}
  const next=makeSession(date,unit);next.manualUnitOverride=manual;next.baseSha=session.baseSha??null;next.testOnly=!!session.testOnly;next.conflict=!!session.conflict;next.touched=manual||!!protectedEntry;
- await queueRecord('sessions',next);session=next;showFazit=false;render();tell(manual?'Einheit nur für diesen Tag geändert.':'Normalen Wochenplan für diesen Tag übernommen.');
+ await queueRecord('sessions',next);session=next;unitMenuOpen=false;showFazit=false;render();tell(manual?'Einheit nur für diesen Tag geändert.':'Normalen Wochenplan für diesen Tag übernommen.');
  }finally{localActionBusy--;}
 }
 async function handlePlanConflict(action){

@@ -1,5 +1,5 @@
-import {metadataLine} from './exercise-metadata.js?v=0.5.1';
-import {symbols,weekOrder,newUnit,saveUnit} from './training-plans.js?v=0.5.1';
+import {metadataLine} from './exercise-metadata.js?v=0.6.0';
+import {symbols,weekOrder,newUnit,saveUnit} from './training-plans.js?v=0.6.0';
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const id=()=> 'unit_'+crypto.randomUUID().replaceAll('-','');
 const short=['SO','MO','DI','MI','DO','FR','SA'];
