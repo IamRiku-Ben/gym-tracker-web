@@ -92,10 +92,12 @@ async function selectDate(next) {
     await saveTail;
     date = next;
     await refreshCollections();
-    const existing=await getRecord('sessions',date),historical=await getRecord('history',date),sha=await getRecord('settings','sha:'+date);
+    let existing=await getRecord('sessions',date);
+    if(existing&&!existing.sessionName&&!existing.notes&&!existing.exercises.length&&!existing.baseSha)existing=null;
+    const historical=await getRecord('history',date),sha=await getRecord('settings','sha:'+date);
     session=existing||(historical?sessionFromWorkout(historical,byId,sha?.sha||null):makeSession(date));
     showFazit = session.status === 'completed';
-    if (!(await getRecord('sessions', date)))
+    if (!existing)
         await putRecord('sessions', session);
     currentPage = 'training';
     render();
@@ -569,6 +571,7 @@ async function migratePrevious(){
  const old=JSON.parse(raw);if(!old?.records)throw Error('Vorherige lokale Daten sind nicht lesbar; Original bleibt erhalten.');
  for(const record of Object.values(old.records)){
   const w=record.data;if(await getRecord('sessions',w.date))continue;
+  if(!w.session_name&&!w.notes&&!w.exercises?.length&&!record.queued)continue;
   const s=sessionFromWorkout({...w,exercises:w.exercises||[]},byId,record.baseSha??null);
   s.status=record.queued||!record.dirty?'completed':'draft';s.touched=!!record.dirty;s.syncPending=!!record.queued;s.conflict=!!record.conflict;
   if(s.status==='draft')for(const e of s.exercises)for(const set of e.sets){set.done=false;if(set.kg===null)set.kg='';if(set.reps===null)set.reps='';}
