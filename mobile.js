@@ -1,10 +1,19 @@
-import { byId, dayNames, plans } from './catalog.js';
-import {workoutFromSession,sessionFromWorkout} from './form-model.js';
-import {ArchiveSync} from './archive-sync.js';
-import {validate as validateWorkout,pathFor,today} from './core.js';
+import { catalog,byId, dayNames, plans } from './catalog.js?v=0.4.0';
+import {workoutFromSession,sessionFromWorkout} from './form-model.js?v=0.4.0';
+import {ArchiveSync} from './archive-sync.js?v=0.4.0';
+import {validate as validateWorkout,pathFor,today} from './core.js?v=0.4.0';
+import {defaultPlanData,validatePlans,validateEditorDraft,scheduledUnit,sessionForUnit,canRefreshTemplate,recordPlanChange,planPath} from './training-plans.js?v=0.4.0';
+import {PlanEditor} from './plan-editor.js?v=0.4.0';
+import {syncPlanRecord,ensureExerciseRegistry} from './plan-sync.js?v=0.4.0';
+import {createConfirmation} from './confirm-action.js?v=0.4.0';
+const directory=await fetch('./exercise-directory.json').then(r=>{if(!r.ok)throw Error('Übungskatalog fehlt');return r.json()});
+const exerciseLibrary=[...catalog];
+for(const e of directory.exercises){if(!/^[a-z0-9_]+$/.test(e.id)||byId.has(e.id)||new URL(e.url).hostname!=='modusx.de')continue;const meta={id:e.id,en:e.name,de:e.name,basis:'unknown',increment:2.5,rest:90,groups:e.groups,equipment:e.equipment,url:e.url};byId.set(meta.id,meta);exerciseLibrary.push(meta);}
 const seedHistory=[];
 const schema=await fetch('./workout.schema.json').then(r=>{if(!r.ok)throw Error('Schema fehlt');return r.json()});
 let archive, syncMessage='Noch nicht verbunden';
+let planRecord,planEditor,syncRunning=false,localActionBusy=0;
+const confirmAction=createConfirmation(()=>localActionBusy++,()=>localActionBusy--);
 
 const DB_NAME = 'gym-tracker-offline-v1';
 const DB_VERSION = 1;
@@ -76,16 +85,8 @@ function previousExercise(id, beforeDate, basis) {
     }
     return null;
 }
-function makeSession(day) {
-    const plan = plans[dayOf(day)] || { name: 'REST DAY', subtitle: 'Regeneration', ids: [] };
-    const now = new Date().toISOString();
-    return { date: day, sessionName: plan.name, status: 'draft', touched:false, notes: '', createdAt: now, updatedAt: now, exercises: plan.ids.map(id => {
-            const meta = byId.get(id);
-            const prev = previousExercise(id, day);
-            const sets = (prev?.exercise.sets || Array.from({ length: 3 }, (_, i) => ({ index: i + 1, weight_kg: '', reps: '' }))).map((s, i) => ({ id: i + 1, kg: s.weight_kg, reps: s.reps, done: false }));
-            return { id, basis: prev?.exercise.load_basis||meta.basis, enabled: !(plan.optional?.includes(id)), restSeconds: settings.restSeconds[id] ?? meta.rest, notes: '', sets };
-        }) };
-}
+function makeSession(day,unit=scheduledUnit(planRecord.data,day)){return sessionForUnit(day,unit,byId,previousExercise);}
+function unitSelector(){const normal=scheduledUnit(planRecord.data,date);return `<section class="card training-unit-selector"><label for="training-unit">Einheit für diesen Tag</label><select id="training-unit"><option value="__current">${esc(session.unitIcon||'🏋️')} ${esc(session.sessionName)} · aktuell</option>${planRecord.data.units.map(u=>`<option value="${u.id}">${u.icon} ${esc(u.name)}</option>`).join('')}<option value="__rest">🌿 Ruhetag</option></select><div><p class="muted">${session.manualUnitOverride?'Nur für diesen Tag geändert. ':''}Normalerweise ${esc(dayNames[dayOf(date)])}: <b>${esc(normal?.name||'Ruhetag')}</b></p><button class="quiet-btn" data-action="unit-standard">Wochenplan übernehmen</button></div></section>`;}
 async function selectDate(next) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(next) || Number.isNaN(Date.parse(next + 'T12:00:00')))
         return;
@@ -94,10 +95,12 @@ async function selectDate(next) {
     await refreshCollections();
     let existing=await getRecord('sessions',date);
     if(existing&&!existing.sessionName&&!existing.notes&&!existing.exercises.length&&!existing.baseSha)existing=null;
+    let refreshed=false;
+    if(existing&&canRefreshTemplate(existing)&&existing.planSignature!==JSON.stringify(scheduledUnit(planRecord.data,date))){existing=makeSession(date);refreshed=true;}
     const historical=await getRecord('history',date),sha=await getRecord('settings','sha:'+date);
     session=existing||(historical?sessionFromWorkout(historical,byId,sha?.sha||null):makeSession(date));
     showFazit = session.status === 'completed';
-    if (!existing)
+    if (!existing||refreshed)
         await putRecord('sessions', session);
     currentPage = 'training';
     render();
@@ -139,21 +142,22 @@ function previousLabel(id) {
     return `${new Date(previous.date + 'T12:00').toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' })} · ${weights} kg · ${sets.map(s => s.reps).join('/')}`;
 }
 function createHeader() {
-    return `<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-copy"><strong>GYM TRACKER</strong><small>MOBILE · V0.3</small></span></div><div class="topbar-right"><span class="connection ${navigator.onLine ? 'online' : 'offline'}" id="network-indicator"><span class="dot"></span>${navigator.onLine ? 'Online' : 'Offline'}</span><span id="save-status" class="save-status good">Lokal gespeichert</span></div></div></header>`;
+    return `<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-copy"><strong>GYM TRACKER</strong><small>MOBILE · V0.4</small></span></div><div class="topbar-right"><span class="connection ${navigator.onLine ? 'online' : 'offline'}" id="network-indicator"><span class="dot"></span>${navigator.onLine ? 'Online' : 'Offline'}</span><span id="save-status" class="save-status good">Lokal gespeichert</span></div></div></header>`;
 }
 function createNav() {
-    const tabs = [['training', 'Training', '▦'], ['history', 'Verlauf', '▥'], ['settings', 'Einstellungen', '⚙']];
+    const tabs = [['training', 'Training', '▦'], ['plans','Pläne','▤'], ['history', 'Verlauf', '▥'], ['settings', 'Einstellungen', '⚙']];
     return `<nav class="tabs" aria-label="Hauptnavigation">${tabs.map(([key, title, icon]) => `<button type="button" data-action="tab" data-tab="${key}" class="tab ${currentPage === key ? 'active' : ''}"><span>${icon}</span>${title}</button>`).join('')}</nav>`;
 }
 function createTraining() {
-    const plan = plans[dayOf(date)], c = countSets();
+    const c = countSets();
     return `<section class="page training">
- <div class="headline-row"><div><div class="eyebrow">DEIN TRAINING <span>·</span> ${esc(dayNames[dayOf(date)].toUpperCase())}</div><h1>${esc(plan?.name || 'REST DAY')}</h1><p class="muted">${esc(plan?.subtitle || 'Erholung und Regeneration')}</p></div><span class="version-tag">LOKALER ${session.status === 'completed' ? 'ABSCHLUSS' : 'ENTWURF'}</span></div>
+ <div class="headline-row"><div><div class="eyebrow">DEIN TRAINING <span>·</span> ${esc(dayNames[dayOf(date)].toUpperCase())}</div><h1>${esc(session.unitIcon||'🏋️')} ${esc(session.sessionName)}</h1><p class="muted">${esc(session.unitDescription||'Deine Trainingseinheit')}</p></div><span class="version-tag">LOKALER ${session.status === 'completed' ? 'ABSCHLUSS' : 'ENTWURF'}</span></div>
  <div class="date-strip"><button type="button" data-action="week" data-offset="-7" class="iconbutton" aria-label="Vorige Woche">←</button><label class="date-input-wrap"><span>TRAININGSDATUM</span><input id="date-picker" type="date" value="${esc(date)}" aria-label="Trainingsdatum"></label><button type="button" data-action="week" data-offset="7" class="iconbutton" aria-label="Nächste Woche">→</button></div>
- <div class="day-selector">${[1, 2, 3, 4, 5, 6].map(i => `<button type="button" data-action="day" data-day="${i}" class="day-chip ${dayOf(date) === i ? 'selected' : ''}">${['', 'MO', 'DI', 'MI', 'DO', 'FR', 'SA'][i]}</button>`).join('')}</div>
+ <div class="day-selector">${[1, 2, 3, 4, 5, 6,0].map(i => `<button type="button" data-action="day" data-day="${i}" class="day-chip ${dayOf(date) === i ? 'selected' : ''}">${['SO', 'MO', 'DI', 'MI', 'DO', 'FR', 'SA'][i]}</button>`).join('')}</div>
+ ${unitSelector()}
  <div class="overview"><div class="metric"><span>FORTSCHRITT</span><strong>${c.percentage}<small>%</small></strong></div><div class="metric"><span>ERLEDIGTE SÄTZE</span><strong>${c.done}<small> / ${c.total}</small></strong></div><div class="metric"><span>ÜBUNGEN AKTIV</span><strong>${c.exercises}</strong></div><progress class="progress" aria-label="Trainingsfortschritt" value="${c.percentage}" max="100"></progress></div>
  ${session.status === 'completed' ? `<div class="completed-banner"><span class="badge-check">✓</span><div><strong>Training abgeschlossen</strong><p>Dein Training liegt im lokalen Speicher. ${session.syncPending?'Es wartet auf die Synchronisierung.':session.baseSha?'Es ist mit deinem privaten Archiv synchronisiert.':'Es ist lokal gespeichert.'}</p></div><button class="button outline" data-action="resume">Bearbeiten</button></div>` : ''}
- ${!plan ? `<div class="empty-state"><div class="empty-icon">☾</div><h2>Regeneration ist Teil des Plans.</h2><p>Wähle Montag bis Samstag, um einen Trainingsplan zu öffnen.</p></div>` : session.exercises.map((e, i) => createExercise(e, i)).join('')}
+ ${!session.exercises.length ? `<div class="empty-state"><div class="empty-icon">☾</div><h2>Heute ist Platz für Erholung.</h2><p>Du möchtest trainieren? Wähle oben eine andere Einheit oder lege unter Pläne eine an.</p></div>` : session.exercises.map((e, i) => createExercise(e, i)).join('')}
  <section class="session-notes card"><div class="section-heading"><div class="eyebrow">TRAININGSNOTIZ</div><h2>Wie lief die Einheit?</h2></div><textarea data-field="notes" data-scope="session" rows="3" placeholder="Energie, Schlaf, Technik, Beschwerden oder Besonderheiten …">${esc(session.notes)}</textarea></section>
  ${session.status === 'completed' && showFazit ? createFazit() : ''}
  <div class="action-dock"><div class="dock-info"><strong>${c.done} von ${c.total} Sätzen</strong><span id="dock-hint">Jede Änderung wird automatisch lokal gesichert</span></div><div class="dock-buttons"><button type="button" class="button outline" data-action="export">JSON exportieren</button>${session.status === 'completed' ? '<button type="button" class="button primary" data-action="show-fazit">Fazit ansehen</button>' : `<button type="button" class="button primary" data-action="complete" ${c.done === 0 ? 'disabled' : ''}>Training abschließen ↗</button>`}</div></div>
@@ -162,9 +166,10 @@ function createTraining() {
 function createExercise(e, i) {
     const meta = byId.get(e.id);
     const completed = e.sets.filter(x => x.done).length;
-    return `<article class="exercise-card card ${!e.enabled ? 'inactive' : ''}" data-exercise="${esc(e.id)}"><div class="exercise-header"><div class="exercise-index">${String(i + 1).padStart(2, '0')}</div><div class="exercise-title"><h2>${esc(meta?.en || lookupName(e.id))}</h2><p class="translation">${esc(meta?.de || '')}</p></div><label class="toggle" title="Übung aktivieren oder überspringen"><input type="checkbox" data-scope="exercise" data-id="${esc(e.id)}" data-field="enabled" ${e.enabled ? 'checked' : ''}><span></span></label></div>
+    return `<article class="exercise-card card ${!e.enabled ? 'inactive' : ''}" data-exercise="${esc(e.id)}"><div class="exercise-header"><div class="exercise-index">${String(i + 1).padStart(2, '0')}</div><div class="exercise-title"><h2>${esc(meta?.en || lookupName(e.id))}</h2><p class="translation">${esc(meta?.de!==meta?.en?meta?.de||'':'')}</p></div><label class="toggle" title="Übung aktivieren oder überspringen"><input type="checkbox" data-scope="exercise" data-id="${esc(e.id)}" data-field="enabled" ${e.enabled ? 'checked' : ''}><span></span></label></div>
  ${e.enabled ? `<div class="exercise-meta"><div><span class="label-small">LETZTES MAL</span><span class="previous-result">${esc(previousLabel(e.id))}</span></div><div class="mini-done"><strong>${completed}/${e.sets.length}</strong><small>SÄTZE</small></div></div>
- <div class="rest-row"><span>◷ &nbsp; Satzpause</span><select data-scope="exercise" data-id="${esc(e.id)}" data-field="restSeconds" aria-label="Satzpause ${esc(meta?.en || e.id)}">${[60, 90, 120, 150, 180, 240].map(s => `<option value="${s}" ${e.restSeconds === s ? 'selected' : ''}>${s} Sek.</option>`).join('')}</select></div>
+ ${e.targetReps?`<p class="target-reps">Geplant: ${e.sets.length} × ${esc(e.targetReps)} Wdh. · nur abgehakte Sätze zählen</p>`:''}
+ <div class="rest-row"><span>◷ &nbsp; Satzpause</span><select data-scope="exercise" data-id="${esc(e.id)}" data-field="restSeconds" aria-label="Satzpause ${esc(meta?.en || e.id)}">${[...new Set([0,60,90,120,150,180,240,e.restSeconds])].sort((a,b)=>a-b).map(s => `<option value="${s}" ${e.restSeconds === s ? 'selected' : ''}>${s} Sek.</option>`).join('')}</select></div>
  <div class="set-table"><div class="set-head"><span>SATZ</span><span>GEWICHT <small>KG</small></span><span>WDH.</span><span>FERTIG</span></div>
  ${e.sets.map((s, j) => `<div class="set-row ${s.done ? 'is-done' : ''}"><div class="set-number">${String(j + 1).padStart(2, '0')}</div><div class="stepper"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="kg" data-delta="-${meta?.increment || 2.5}" aria-label="Gewicht reduzieren">−</button><input type="text" inputmode="decimal" data-scope="set" data-id="${esc(e.id)}" data-index="${j}" data-field="kg" value="${esc(kgLabel(s.kg))}" aria-label="Gewicht Satz ${j + 1}"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="kg" data-delta="${meta?.increment || 2.5}" aria-label="Gewicht erhöhen">+</button></div><div class="stepper"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="reps" data-delta="-1" aria-label="Wiederholungen reduzieren">−</button><input type="text" inputmode="numeric" data-scope="set" data-id="${esc(e.id)}" data-index="${j}" data-field="reps" value="${esc(s.reps)}" aria-label="Wiederholungen Satz ${j + 1}"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="reps" data-delta="1" aria-label="Wiederholungen erhöhen">+</button></div><label class="done-label"><input aria-label="Satz erledigt" type="checkbox" data-scope="set" data-id="${esc(e.id)}" data-index="${j}" data-field="done" ${s.done ? 'checked' : ''}><span class="check-square">✓</span></label></div>`).join('')}
  </div>
@@ -212,8 +217,9 @@ function createSettings() {
  <div class="info-box"><strong>Mobile Formularbasis</strong><p>Funktioniert: Training, Notizen, Referenzwerte, Offline-Speicherung, lokales Fazit und JSON-Export. GitHub-Sync ist verfügbar. Ein automatisches KI-Fazit und Hintergrund-Push sind nicht enthalten.</p></div></section>`;
 }
 function render() {
-    app.innerHTML = `${createHeader()}<div class="layout"><main>${currentPage === 'training' ? createTraining() : currentPage === 'history' ? createHistory() : createSettings()}</main><div class="footer-note">GYM TRACKER V0.3 · LOKAL + PRIVATES ARCHIV · <span>BUILT FOR PROGRESS</span></div></div>${createNav()}${toastMessage ? `<div class="toast" role="status">${esc(toastMessage)}</div>` : ''}`;
+    app.innerHTML = `${createHeader()}<div class="layout"><main>${currentPage === 'training' ? createTraining() :currentPage==='plans'?planEditor.view(planRecord): currentPage === 'history' ? createHistory() : createSettings()}</main><div class="footer-note">GYM TRACKER V0.4 · LOKAL + PRIVATES ARCHIV · <span>BUILT FOR PROGRESS</span></div></div>${createNav()}${toastMessage ? `<div class="toast" role="status">${esc(toastMessage)}</div>` : ''}`;
     updateSaveIndicator();
+    if(syncRunning)app.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
 }
 function tell(message) { toastMessage = message; const old = document.querySelector('.toast'); if (old)
     old.remove(); const el = document.createElement('div'); el.className = 'toast'; el.setAttribute('role', 'status'); el.textContent = message; document.body.append(el); setTimeout(() => { el.remove(); if (toastMessage === message)
@@ -247,12 +253,16 @@ async function handleClick(event) {
     if (!target)
         return;
     const action = target.dataset.action;
+    if(action?.startsWith('plans-conflict-')){await handlePlanConflict(action);return;}
+    if(await planEditor.action(action,target,planRecord))return;
+    if(action==='unit-standard'){await replaceUnitForDate(scheduledUnit(planRecord.data,date),false);return;}
     if(['connect','disconnect','sync','conflict-export','conflict-remote','conflict-local'].includes(action)){await handleArchive(action,target.dataset.date);return;}
     const id = target.dataset.id || '', e = getExercise(id), index = Number(target.dataset.index || 0);
     if (action === 'tab') {
         currentPage = target.dataset.tab;
         await refreshCollections();
         render();
+        window.scrollTo({top:0,behavior:'instant'});
         return;
     }
     if (action === 'week') {
@@ -263,8 +273,8 @@ async function handleClick(event) {
     }
     if (action === 'day') {
         const d = new Date(date + 'T12:00:00');
-        const current = dayOf(date) || 7;
-        d.setDate(d.getDate() + Number(target.dataset.day) - current);
+        const current = dayOf(date) || 7,next=Number(target.dataset.day)||7;
+        d.setDate(d.getDate() + next - current);
         await selectDate(localDate(d));
         return;
     }
@@ -287,7 +297,7 @@ async function handleClick(event) {
         return;
     }
     if (action === 'remove-set' && e && e.sets.length > 1) {
-        if (e.sets.at(-1)?.done && !confirm('Der letzte Satz ist bereits abgehakt. Trotzdem entfernen?'))
+        if (e.sets.at(-1)?.done && !await confirmAction('Der letzte Satz ist bereits abgehakt. Trotzdem entfernen?'))
             return;
         e.sets.pop();
         saveLocally();
@@ -318,7 +328,7 @@ async function handleClick(event) {
             tell('Bitte mindestens einen Satz abhaken.');
             return;
         }
-        if (!confirm(`${done} erledigte Sätze lokal abschließen? Nicht abgehakte Sätze zählen nicht als absolviert.`))
+        if (!await confirmAction(`${done} erledigte Sätze lokal abschließen? Nicht abgehakte Sätze zählen nicht als absolviert.`))
             return;
         session.status = 'completed';
         session.syncPending=!session.testOnly;
@@ -350,7 +360,7 @@ async function handleClick(event) {
     if (action === 'backup') {
         await saveTail;
         await refreshCollections();
-        downloadJson('gym-tracker-backup-' + localDate(new Date()) + '.json', { format: 'gym-tracker-local-backup', version: 1, createdAt: new Date().toISOString(), sessions: otherSessions, history: importedHistory, settings });
+        downloadJson('gym-tracker-backup-' + localDate(new Date()) + '.json', { format: 'gym-tracker-local-backup', version: 1, createdAt: new Date().toISOString(), sessions: otherSessions, history: importedHistory, settings,trainingPlans:planRecord,planEditorDraft:planEditor.draft });
         tell('Backup heruntergeladen.');
         return;
     }
@@ -365,6 +375,7 @@ async function handleClick(event) {
 }
 function handleInput(event) {
     const el = event.target;
+    if(planEditor.input(el))return;
     if (!el.dataset.scope || !session)
         return;
     if (el.dataset.scope === 'session' && el.dataset.field === 'notes') {
@@ -397,6 +408,8 @@ function handleInput(event) {
 }
 function handleChange(event) {
     const el = event.target;
+    if(planEditor.change(el,planRecord))return;
+    if(el.id==='training-unit'){if(el.value!=='__current')void replaceUnitForDate(planRecord.data.units.find(u=>u.id===el.value)||null,true).catch(e=>tell(e.message));return;}
     if (el.id === 'date-picker') {
         void selectDate(el.value);
         return;
@@ -449,9 +462,11 @@ async function importFile(el) {
             throw new Error('Datei größer als 5 MB.');
         const obj = JSON.parse(await file.text());
         if (obj?.format === 'gym-tracker-local-backup' && obj.version === 1 && Array.isArray(obj.sessions) && Array.isArray(obj.history)) {
+            if(obj.trainingPlans)validatePlans(obj.trainingPlans.data,byId);
+            if(obj.planEditorDraft)validateEditorDraft(obj.planEditorDraft,byId);
             if (!obj.sessions.every(isSession) || !obj.history.every(isWorkout))
                 throw new Error('Ungültige Backup-Datensätze.');
-            if (!confirm(`Backup mit ${obj.sessions.length} Einträgen wiederherstellen? Gleiche Datumswerte werden überschrieben.`))
+            if (!await confirmAction(`Backup mit ${obj.sessions.length} Einträgen wiederherstellen? Gleiche Datumswerte werden überschrieben.`))
                 return;
             for (const s of obj.sessions)
                 await putRecord('sessions', s);
@@ -460,6 +475,8 @@ async function importFile(el) {
             if (obj.settings?.key === 'preferences')
                 await putRecord('settings', obj.settings);
             settings = await getRecord('settings', 'preferences') || settings;
+            if(obj.trainingPlans){await commitPlanData(obj.trainingPlans.data);planEditor.draft=null;await planEditor.stash();}
+            if(obj.planEditorDraft&&obj.planEditorDraft.unit&&Array.isArray(obj.planEditorDraft.unit.exercises)&&Array.isArray(obj.planEditorDraft.unit.weekdays)){planEditor.draft={...obj.planEditorDraft,baseRevision:planRecord.revision};await planEditor.stash();}
             await selectDate(date);
             tell('Backup importiert.');
         }
@@ -472,7 +489,7 @@ async function importFile(el) {
         }
         else if (isWorkout(obj)) {
             const exists = seedHistory.some(x => x.date === obj.date) || importedHistory.some(x => x.date === obj.date);
-            if (exists && !confirm(`Für ${obj.date} gibt es bereits einen Referenzeintrag. Mit dem Import ersetzen?`))
+            if (exists && !await confirmAction(`Für ${obj.date} gibt es bereits einen Referenzeintrag. Mit dem Import ersetzen?`))
                 return;
             await putRecord('history', obj);
             await refreshCollections();
@@ -499,6 +516,7 @@ async function start() {
             throw new Error('IndexedDB ist in diesem Browser nicht verfügbar.');
         database = await openDatabase();
         settings = await getRecord('settings', 'preferences') || settings;
+        await initializePlans();
         archive=new ArchiveSync({get:getRecord,all:getAllRecords,put:putRecord,flush:async()=>{await saveTail;if(saveError)throw Error(saveError)},schema,byId,onSaved:s=>{if(session?.date===s.date)session=s;}});
         await migratePrevious();
         await selectDate(date);
@@ -525,11 +543,13 @@ async function start() {
     }
 }
 async function runSync(){
- if(archive.busy)return;
+ if(archive.busy||syncRunning||localActionBusy)return;
+ syncRunning=true;
  syncMessage='Synchronisierung läuft …';
  render();app.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
- try{await archive.sync();await refreshCollections();syncMessage=otherSessions.some(s=>s.conflict)?'Konflikt erkannt. Bitte Versionen prüfen.':'Synchronisierung abgeschlossen.';}
+ try{await saveTail;await archive.client.verify();await refreshCollections();const used=[...planRecord.data.units.flatMap(u=>u.exercises.map(e=>e.exerciseId)),...otherSessions.flatMap(s=>s.exercises.map(e=>e.id))];await ensureExerciseRegistry(archive.client,used,byId);await archive.sync();await saveTail;const synced=await syncPlanRecord(archive.client,planRecord,byId);await putRecord('settings',synced);planRecord=synced;await refreshCurrentTemplate();await refreshCollections();syncMessage=otherSessions.some(s=>s.conflict)||planRecord.conflict?'Konflikt erkannt. Bitte Versionen unter Pläne bzw. Einstellungen prüfen.':'Trainingsdaten und Pläne synchronisiert.';}
  catch(e){syncMessage=e.message;}
+ finally{syncRunning=false;}
  render();tell(syncMessage);
 }
 async function handleArchive(action,day){
@@ -550,13 +570,13 @@ async function handleArchive(action,day){
   if(action==='conflict-remote'){
    if(!remote)throw Error('Datei auf GitHub fehlt. Lokales Backup wurde exportiert.');
    validateWorkout(remote.data,schema);
-   if(!confirm('Die lokale Einheit durch die GitHub-Version ersetzen? Dein lokaler Entwurf wurde als Backup exportiert.'))return;
+   if(!await confirmAction('Die lokale Einheit durch die GitHub-Version ersetzen? Dein lokaler Entwurf wurde als Backup exportiert.'))return;
    const adopted=sessionFromWorkout(remote.data,byId,remote.sha);await putRecord('sessions',adopted);
    if(day===date)session=adopted;
    await putRecord('history',remote.data);await putRecord('settings',{key:'sha:'+day,sha:remote.sha});
   }
   if(action==='conflict-local'){
-   if(!confirm('Nach Prüfung deine lokale Version zum Ersetzen der GitHub-Version vormerken? Beide Versionen wurden exportiert.'))return;
+   if(!await confirmAction('Nach Prüfung deine lokale Version zum Ersetzen der GitHub-Version vormerken? Beide Versionen wurden exportiert.'))return;
    if(local.testOnly)throw Error('Testentwürfe werden nicht ins echte Archiv hochgeladen.');
    validateWorkout(toWorkout(local),schema);
    local.baseSha=remote?.sha??null;local.conflict=false;local.syncPending=true;
@@ -582,4 +602,60 @@ async function migratePrevious(){
  await putRecord('settings',{key:'migration-v02',done:true});
 }
 
+async function queueRecord(store,item){
+ const copy=structuredClone(item);pendingSaves++;updateSaveIndicator();
+ const operation=saveTail.catch(()=>{}).then(()=>putRecord(store,copy)).then(()=>{saveError='';}).catch(e=>{saveError=e.message||String(e);throw e;}).finally(()=>{pendingSaves--;updateSaveIndicator();});
+ saveTail=operation.catch(()=>{});await operation;
+}
+async function initializePlans(){
+ planRecord=await getRecord('settings','training-plans');
+ if(!planRecord){planRecord={key:'training-plans',data:defaultPlanData(plans,byId),baseSha:null,dirty:false,conflict:false,revision:0};await putRecord('settings',planRecord);}
+ validatePlans(planRecord.data,byId);planRecord.revision??=0;
+ planEditor=new PlanEditor({toTop:()=>window.scrollTo({top:0,behavior:'instant'}),confirm:confirmAction,byId,catalog:exerciseLibrary,render,notify:tell,persistDraft:draft=>queueRecord('settings',{key:'training-plan-editor',draft}),onCommit:commitPlanData,onDelete:async id=>{const next=structuredClone(planRecord.data);next.units=next.units.filter(u=>u.id!==id);await commitPlanData(next);render();tell('Einheit entfernt. Trainingslogs bleiben erhalten.');},onUndo:async()=>{const previous=await getRecord('settings','training-plans-undo');if(!previous){tell('Noch keine Planänderung zum Rückgängigmachen.');return;}await commitPlanData(previous.data);render();tell('Letzte Planänderung rückgängig gemacht.');}});
+ const draft=await getRecord('settings','training-plan-editor');
+ if(draft?.draft){validateEditorDraft(draft.draft,byId);planEditor.draft=draft.draft;}
+}
+async function commitPlanData(data){
+ localActionBusy++;try{
+ validatePlans(data,byId);await saveTail;if(saveError)throw Error('Speichern fehlgeschlagen. Bitte zuerst ein Backup erstellen.');
+ await queueRecord('settings',{key:'training-plans-undo',data:planRecord.data});
+ const next=recordPlanChange(planRecord,data);await queueRecord('settings',next);planRecord=next;
+ await refreshCurrentTemplate();
+ }finally{localActionBusy--;}
+}
+async function refreshCurrentTemplate(){
+ if(!session||!canRefreshTemplate(session))return;
+ const unit=scheduledUnit(planRecord.data,date);if(session.planSignature===JSON.stringify(unit))return;
+ const next=makeSession(date,unit);await queueRecord('sessions',next);session=next;
+}
+async function replaceUnitForDate(unit,manual){
+ localActionBusy++;try{
+ await saveTail;if(saveError)throw Error('Bitte zuerst den Speicherfehler beheben.');
+ const protectedEntry=session.touched||session.baseSha||session.status==='completed'||session.exercises.some(e=>e.notes||e.sets.some(s=>s.done))||session.notes;
+ if(protectedEntry){if(!await confirmAction('Die Einheit für diesen Tag durch ein neues Formular ersetzen? Vorhandene Eingaben werden vorher als Backup heruntergeladen. Dein normaler Wochenplan bleibt unverändert.')){render();return;}downloadJson(date+'-vor-einheitenwechsel.json',session);}
+ const next=makeSession(date,unit);next.manualUnitOverride=manual;next.baseSha=session.baseSha??null;next.testOnly=!!session.testOnly;next.conflict=!!session.conflict;next.touched=manual||!!protectedEntry;
+ await queueRecord('sessions',next);session=next;showFazit=false;render();tell(manual?'Einheit nur für diesen Tag geändert.':'Normalen Wochenplan für diesen Tag übernommen.');
+ }finally{localActionBusy--;}
+}
+async function handlePlanConflict(action){
+ if(!archive.client)throw Error('Bitte zuerst unter Einstellungen GitHub verbinden.');
+ if(syncRunning||archive.busy)throw Error('Bitte laufenden Sync abwarten.');
+ localActionBusy++;try{
+ const remote=await archive.client.read(planPath);if(remote)validatePlans(remote.data,byId);
+ downloadJson('trainingsplaene-konflikt.json',{local:planRecord.data,github:remote?.data??null});
+ if(action==='plans-conflict-export')return;
+ if(action==='plans-conflict-remote'){
+  if(!remote)throw Error('Die Plandatei fehlt auf GitHub. Dein lokaler Plan bleibt erhalten.');
+  if(!await confirmAction('Die gespeicherten lokalen Pläne durch die GitHub-Version ersetzen? Beide Versionen wurden exportiert.'))return;
+  await queueRecord('settings',{key:'training-plans-undo',data:planRecord.data});
+  planRecord={...planRecord,data:remote.data,baseSha:remote.sha,dirty:false,conflict:false,revision:planRecord.revision+1};
+ }
+ if(action==='plans-conflict-local'){
+  if(!await confirmAction('Nach Prüfung die lokale Plandatei zum Ersetzen der aktuellen GitHub-Version vormerken? Beide Versionen wurden exportiert.'))return;
+  planRecord={...planRecord,baseSha:remote?.sha??null,dirty:true,conflict:false};
+ }
+ await queueRecord('settings',planRecord);await refreshCurrentTemplate();render();
+ }finally{localActionBusy--;}
+}
 void start();
+

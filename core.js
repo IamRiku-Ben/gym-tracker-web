@@ -38,12 +38,12 @@ export class GitHub {
   }
   async verify(){const r=await this.api('');if(r.visibility!=='private')throw new Error('Sync nur mit privatem Trainingsrepository erlaubt');}
   async read(path){const r=await this.api('/contents/'+path+'?ref=main');return r?{sha:r.sha,data:decode(r.content)}:null;}
-  async push(path,entry){
+  async push(path,entry,message=`Training ${entry.data.date}`){
     const remote=await this.read(path);
     if(JSON.stringify(remote?.data)===JSON.stringify(entry.data))return remote.sha;
     if((remote?.sha??null)!==entry.baseSha){const e=new Error('Konflikt: Auf GitHub liegt eine andere Version.');e.conflict=true;throw e;}
     try {
-      const r=await this.api('/contents/'+path,'PUT',{branch:'main',message:`Training ${entry.data.date}`,content:encode(entry.data),...(entry.baseSha?{sha:entry.baseSha}:{})});
+      const r=await this.api('/contents/'+path,'PUT',{branch:'main',message,content:encode(entry.data),...(entry.baseSha?{sha:entry.baseSha}:{})});
       const check=await this.read(path);
       if(check?.sha!==r.content.sha)throw new Error('Upload nicht bestätigt; bleibt in Warteschlange.');
       return check.sha;

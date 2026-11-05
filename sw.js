@@ -1,5 +1,5 @@
-const CACHE='gym-app-mobile-v03-2';
-const FILES=['./','./index.html','./form.css','./mobile.js?v=0.3.1','./catalog.js','./form-model.js','./archive-sync.js','./core.js','./workout.schema.json','./manifest.webmanifest','./icon.svg'];
+const CACHE='gym-app-plans-v04-2';
+const FILES=['./','./index.html','./form.css?v=0.4.0','./plans.css?v=0.4.0','./mobile.js?v=0.4.0','./catalog.js?v=0.4.0','./form-model.js?v=0.4.0','./archive-sync.js?v=0.4.0','./core.js?v=0.4.0','./training-plans.js?v=0.4.0','./plan-editor.js?v=0.4.0','./plan-sync.js?v=0.4.0','./confirm-action.js?v=0.4.0','./exercise-directory.json','./workout.schema.json','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('gym-app-')&&k!==CACHE).map(k=>caches.delete(k))))));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const url=new URL(e.request.url);if(url.origin!==self.location.origin)return;const allowed=FILES.map(p=>new URL(p,self.registration.scope).href);if(!allowed.includes(url.href))return;e.respondWith(caches.open(CACHE).then(async c=>(await c.match(e.request))||fetch(e.request)));});

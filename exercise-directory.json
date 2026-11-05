@@ -1,0 +1,5853 @@
+{
+  "source": "https://modusx.de/fitness-uebungen/uebersicht/",
+  "retrieved": "2026-11-05",
+  "notice": "Übungsnamen, Kategorien und Quellenlinks. Keine Anleitungen oder Bilder übernommen.",
+  "exercises": [
+    {
+      "id": "mx_45_grad_beinpresse_mit_breiter_fussstellung",
+      "name": "45-Grad Beinpresse mit breiter Fußstellung",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-45-grad/45-grad-beinpresse-mit-breiter-fussstellung/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_45_grad_beinpresse_mit_einem_bein",
+      "name": "45-Grad Beinpresse mit einem Bein",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-45-grad/45-grad-beinpresse-mit-einem-bein/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_45_grad_beinpresse_mit_enger_fussstellung",
+      "name": "45-Grad Beinpresse mit enger Fußstellung",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-45-grad/45-grad-beinpresse-mit-enger-fussstellung/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_45_grad_beinpresse_mit_neutraler_fussstellung",
+      "name": "45-Grad Beinpresse mit neutraler Fußstellung",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-45-grad/45-grad-beinpresse-mit-neutraler-fussstellung/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_abduktion_kabelzug",
+      "name": "Abduktion am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/abduktion-kabelzug/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_abduktion_an_der_abduktionsmaschine_klassisch",
+      "name": "Abduktion an der Abduktionsmaschine (klassisch)",
+      "url": "https://modusx.de/fitness-uebungen/abduktion-maschine/abduktion-an-der-abduktionsmaschine-klassisch/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_abduktion_maschine",
+      "name": "Abduktion an der Abduktorenmaschine",
+      "url": "https://modusx.de/fitness-uebungen/abduktion-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_abduktorenmaschine_im_stehen",
+      "name": "Abduktorenmaschine im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/abduktion-maschine/abduktorenmaschine-im-stehen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_adduktion_geraet",
+      "name": "Adduktion am Adduktoren-Gerät",
+      "url": "https://modusx.de/fitness-uebungen/adduktion-geraet/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_adduktion_am_geraet_im_sitzen",
+      "name": "Adduktion am Gerät im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/adduktion-geraet/adduktion-am-geraet-im-sitzen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_adduktion_am_geraet_umgekehrt",
+      "name": "Adduktion am Gerät umgekehrt",
+      "url": "https://modusx.de/fitness-uebungen/adduktion-geraet/adduktion-am-geraet-umgekehrt/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_adduktion_kabel",
+      "name": "Adduktion am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/adduktion-kabel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_adduktoren_dehnen",
+      "name": "Adduktoren dehnen",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_adduktoren_dehnen_durch_liegendes_beine_oeffnen_dehnen",
+      "name": "Adduktoren dehnen durch liegendes Beine öffnen (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/adduktoren-dehnen-durch-liegendes-beine-oeffnen-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_adduktoren_dehnen_mit_breitem_stand_dehnen",
+      "name": "Adduktoren dehnen mit breitem Stand (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/adduktoren-dehnen-mit-breitem-stand-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_adduktoren_dehnen_sitzend_mit_breiten_beinen_dehnen",
+      "name": "Adduktoren dehnen sitzend mit breiten Beinen (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/adduktoren-dehnen-sitzend-mit-breiten-beinen-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_arnold_dips",
+      "name": "Arnold Dips",
+      "url": "https://modusx.de/fitness-uebungen/arnold-dips/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_arnold_dips_mit_zusatzgewicht",
+      "name": "Arnold Dips mit Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/arnold-dips/arnold-dips-mit-zusatzgewicht/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_arnold_press",
+      "name": "Arnold-Press",
+      "url": "https://modusx.de/fitness-uebungen/arnold-press/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kettlebell",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_arnold_press_sitzend_mit_kurzhanteln",
+      "name": "Arnold-Press sitzend mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/arnold-press/arnold-press-sitzend-mit-kurzhanteln/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_arnold_press_stehend_mit_kettlebells",
+      "name": "Arnold-Press stehend mit Kettlebells",
+      "url": "https://modusx.de/fitness-uebungen/arnold-press/arnold-press-stehend-mit-kettlebells/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_aufrechtes_rudern",
+      "name": "Aufrechtes Rudern",
+      "url": "https://modusx.de/fitness-uebungen/aufrechtes-rudern/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_aufrechtes_rudern_am_kabelzug",
+      "name": "Aufrechtes Rudern am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/aufrechtes-rudern/aufrechtes-rudern-am-kabelzug/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_aufrechtes_rudern_mit_dem_theraband",
+      "name": "Aufrechtes Rudern mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/aufrechtes-rudern/aufrechtes-rudern-mit-dem-theraband/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_kinnziehen_mit_der_langhantel",
+      "name": "Aufrechtes Rudern mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/aufrechtes-rudern/kinnziehen-mit-der-langhantel/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_enges_aufrechtes_rudern_mit_der_sz_stange",
+      "name": "Aufrechtes Rudern mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/aufrechtes-rudern/enges-aufrechtes-rudern-mit-der-sz-stange/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_aufrechtes_kurzhantel_rudern_im_stehen",
+      "name": "Aufrechtes Rudern mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/aufrechtes-rudern/aufrechtes-kurzhantel-rudern-im-stehen/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_ausfallschritte_mit_der_langhantel",
+      "name": "Ausfallschritte mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges-mit-gewicht/ausfallschritte-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_ausfallschritte_mit_kurzhanteln",
+      "name": "Ausfallschritte mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges-mit-gewicht/ausfallschritte-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_ball_crunches",
+      "name": "Ball-Crunches",
+      "url": "https://modusx.de/fitness-uebungen/ball-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_bankdruecken_an_der_multipresse_fuer_die_mittlere_brust",
+      "name": "Bankdrücken an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/multipresse-bankdruecken/bankdruecken-an-der-multipresse-fuer-die-mittlere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_multipresse_bankdruecken",
+      "name": "Bankdrücken an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/multipresse-bankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_barbell_curl_mit_breitem_griff",
+      "name": "Barbell Curl mit breitem Griff",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-curls/barbell-curl-mit-breitem-griff/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_bauchrolle_mit_dem_wheel_roller",
+      "name": "Bauchrolle mit dem Wheel-Roller",
+      "url": "https://modusx.de/fitness-uebungen/bauchroller-uebung/bauchrolle-mit-dem-wheel-roller/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_bauchrolle_mit_der_langhantel",
+      "name": "Bauchrolle mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/bauchroller-uebung/bauchrolle-mit-der-langhantel/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_bauchroller_uebung",
+      "name": "Bauchroller-Übung mit dem AB-Roller / AB-Wheel",
+      "url": "https://modusx.de/fitness-uebungen/bauchroller-uebung/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_beckenheben",
+      "name": "Beckenheben / Glute Bridge",
+      "url": "https://modusx.de/fitness-uebungen/beckenheben/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beckenheben_langhantel",
+      "name": "Beckenheben mit Gewicht (Langhantel)",
+      "url": "https://modusx.de/fitness-uebungen/beckenheben-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_beinbeuger_sitzend_am_beinbeuger_geraet",
+      "name": "Beinbeuger sitzend am Beinbeuger-Gerät",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-maschine/beinbeuger-sitzend-am-beinbeuger-geraet/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beincurls_kurzhantel",
+      "name": "Beinbeuger-Curls mit der Kurzhantel",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-kurzhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_beincurls_maschine",
+      "name": "Beincurls an der Beinbeuger-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beincurls_stehend_am_kabelturm",
+      "name": "Beincurls stehend am Kabelturm",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-kabel/beincurls-stehend-am-kabelturm/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_beincurls_kabel",
+      "name": "Beincurls stehend mit dem Kabel / Theraband",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-kabel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_beinheben_an_der_dipstange",
+      "name": "Beinheben an der Dipstange",
+      "url": "https://modusx.de/fitness-uebungen/knieheben-am-geraet/beinheben-an-der-dipstange/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_beinheben_haengend",
+      "name": "Beinheben hängend / Hanging Leg Raises",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-haengend/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_beinheben_haengend_fuer_die_geraden_bauchmuskeln",
+      "name": "Beinheben hängend für die geraden Bauchmuskeln",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-haengend/beinheben-haengend-fuer-die-geraden-bauchmuskeln/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_beinheben_haengend_fuer_die_seitlichen_bauchmuskeln",
+      "name": "Beinheben hängend für die seitlichen Bauchmuskeln",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-haengend/beinheben-haengend-fuer-die-seitlichen-bauchmuskeln/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_beinheben_liegend",
+      "name": "Beinheben liegend / Leg Raises / Leg Lifts",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-liegend/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beinheben_mit_der_armstuetze",
+      "name": "Beinheben mit der Armstütze",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-beinheben/beinheben-mit-der-armstuetze/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beinheben_mit_hueftrolle",
+      "name": "Beinheben mit Hüftrolle",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-liegend/beinheben-mit-hueftrolle/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beinpresse_45_grad",
+      "name": "Beinpresse 45-Grad",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-45-grad/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beinpresse_einbeinig",
+      "name": "Beinpresse einbeinig",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-klassisch/beinpresse-einbeinig/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beinpresse_klassisch",
+      "name": "Beinpresse klassisch (horizontal)",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-klassisch/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beinpresse_mit_beiden_beinen",
+      "name": "Beinpresse mit beiden Beinen",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-klassisch/beinpresse-mit-beiden-beinen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beinpresse_vertikal_multipresse",
+      "name": "Beinpresse mit der Multipresse (vertikal)",
+      "url": "https://modusx.de/fitness-uebungen/beinpresse-vertikal-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_beinschere",
+      "name": "Beinschere",
+      "url": "https://modusx.de/fitness-uebungen/beinschere/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beinspreizen",
+      "name": "Beinspreizen",
+      "url": "https://modusx.de/fitness-uebungen/beinspreizen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beinspreizen_im_liegen",
+      "name": "Beinspreizen im Liegen",
+      "url": "https://modusx.de/fitness-uebungen/beinspreizen/beinspreizen-im-liegen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_beinspreizen_im_sitzen",
+      "name": "Beinspreizen im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/beinspreizen/beinspreizen-im-sitzen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_beinstrecken_am_kabelturm",
+      "name": "Beinstrecken am Kabelturm",
+      "url": "https://modusx.de/fitness-uebungen/beinstrecken-kabel/beinstrecken-am-kabelturm/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_beinstrecken_maschine",
+      "name": "Beinstrecken an der Beinstrecker-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/beinstrecken-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_beinstrecken_kabel",
+      "name": "Beinstrecken mit dem Kabel / Theraband",
+      "url": "https://modusx.de/fitness-uebungen/beinstrecken-kabel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_beinstrecken_mit_dem_theraband",
+      "name": "Beinstrecken mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/beinstrecken-kabel/beinstrecken-mit-dem-theraband/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_bird_dog",
+      "name": "Bird-Dog",
+      "url": "https://modusx.de/fitness-uebungen/bird-dog/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_bizepsmaschine_bizeps_curls",
+      "name": "Bizeps Curls an der Bizepsmaschine",
+      "url": "https://modusx.de/fitness-uebungen/bizepsmaschine-bizeps-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_blaster_bizeps_curls",
+      "name": "Bizeps Curls mit dem Bizeps Blaster / Isolator",
+      "url": "https://modusx.de/fitness-uebungen/blaster-bizeps-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_bizeps_blaster_curls_mit_der_sz_stange",
+      "name": "Bizeps-Blaster Curls mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/blaster-bizeps-curls/bizeps-blaster-curls-mit-der-sz-stange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_bizeps_curls_mit_der_kurzhantel_sitzend",
+      "name": "Bizeps-Curls mit der Kurzhantel sitzend",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-bizeps-curls-klassisch/bizeps-curls-mit-der-kurzhantel-sitzend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_box_front_squat",
+      "name": "Box Front Squat",
+      "url": "https://modusx.de/fitness-uebungen/box-squat/box-front-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_box_squat",
+      "name": "Box Squats",
+      "url": "https://modusx.de/fitness-uebungen/box-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_breite_liegestuetze_mit_fokus_auf_die_brust",
+      "name": "Breite Liegestütze mit Fokus auf die Brust",
+      "url": "https://modusx.de/fitness-uebungen/liegestuetze/breite-liegestuetze-mit-fokus-auf-die-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_brustpresse_mit_fokus_auf_die_mittlere_brust",
+      "name": "Brustpresse für die mittlere Brust",
+      "url": "https://modusx.de/fitness-uebungen/brustpresse/brustpresse-mit-fokus-auf-die-mittlere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_brustpresse_fuer_die_untere_brust_leicht_geneigt",
+      "name": "Brustpresse für die untere Brust",
+      "url": "https://modusx.de/fitness-uebungen/brustpresse/brustpresse-fuer-die-untere-brust-leicht-geneigt/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_brustpresse",
+      "name": "Brustpresse: Bankdrücken mit der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/brustpresse/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_bulgarian_split_kniebeugen_mit_kurzhanteln",
+      "name": "Bulgarian Split Kniebeugen mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/bulgarian-split-squat/bulgarian-split-kniebeugen-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_bulgarian_split_squat",
+      "name": "Bulgarian Split Squat",
+      "url": "https://modusx.de/fitness-uebungen/bulgarian-split-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_bulgarian_split_squats_an_der_multipresse",
+      "name": "Bulgarian Split Squats an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/bulgarian-split-squat/bulgarian-split-squats-an-der-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_bulgarian_split_squats_ohne_zusatzgewicht",
+      "name": "Bulgarian Split Squats ohne Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/bulgarian-split-squat/bulgarian-split-squats-ohne-zusatzgewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_bulgarian_squats_mit_der_langhantel",
+      "name": "Bulgarian Squats mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/bulgarian-split-squat/bulgarian-squats-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_butterfly_an_maschine",
+      "name": "Butterfly an der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-an-maschine/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_butterfly_reverse_am_geraet",
+      "name": "Butterfly Reverse am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-reverse-am-geraet/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_butterfly_reverse_am_kabelturm_von_vorne",
+      "name": "Butterfly Reverse am Kabelturm von vorne",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-reverse-am-kabelzug/butterfly-reverse-am-kabelturm-von-vorne/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_butterfly_reverse_am_kabelzug",
+      "name": "Butterfly Reverse am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-reverse-am-kabelzug/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_butterfly_sit_ups",
+      "name": "Butterfly Sit-Ups",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-sit-ups/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_butterfly_stretch_dehnen",
+      "name": "Butterfly Stretch (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/butterfly-stretch-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_butterfly_crunch_mit_einem_ball",
+      "name": "Butterfly-Crunch mit einem Ball",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-crunches/butterfly-crunch-mit-einem-ball/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_butterfly_crunches",
+      "name": "Butterfly-Crunches",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_cable_fly",
+      "name": "Cable Crossover / Cable Fly",
+      "url": "https://modusx.de/fitness-uebungen/cable-fly/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_fly_zur_mitte_fuer_die_mittlere_brust",
+      "name": "Cable Crossover / Cable Fly klassisch",
+      "url": "https://modusx.de/fitness-uebungen/cable-fly/cable-fly-zur-mitte-fuer-die-mittlere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_curl_mit_einem_arm_am_tiefen_block",
+      "name": "Cable Curl mit einem Arm am tiefen Block",
+      "url": "https://modusx.de/fitness-uebungen/cable-curls/cable-curl-mit-einem-arm-am-tiefen-block/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_curls",
+      "name": "Cable Curls / Kabelcurls",
+      "url": "https://modusx.de/fitness-uebungen/cable-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_fly_nach_unten_fuer_die_untere_brust",
+      "name": "Cable Fly von oben nach unten",
+      "url": "https://modusx.de/fitness-uebungen/cable-fly/cable-fly-nach-unten-fuer-die-untere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_fly_nach_oben_fuer_die_obere_brust",
+      "name": "Cable Fly von unten nach oben",
+      "url": "https://modusx.de/fitness-uebungen/cable-fly/cable-fly-nach-oben-fuer-die-obere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_crunch_im_stehen",
+      "name": "Cable-Crunch im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/cable-crunches/cable-crunch-im-stehen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_crunches",
+      "name": "Cable-Crunches",
+      "url": "https://modusx.de/fitness-uebungen/cable-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_twist_vor_der_brust_im_sitzen",
+      "name": "Cable-Twist vor der Brust im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-kabelzug/cable-twist-vor-der-brust-im-sitzen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_cable_twist_vor_der_brust_im_stehen",
+      "name": "Cable-Twist vor der Brust im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-kabelzug/cable-twist-vor-der-brust-im-stehen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_clamshell",
+      "name": "Clamshell",
+      "url": "https://modusx.de/fitness-uebungen/clamshell/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_cossack_squat",
+      "name": "Cossack Squats",
+      "url": "https://modusx.de/fitness-uebungen/cossack-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_bicycle_crunches",
+      "name": "Criss Cross / Bicycle Crunches",
+      "url": "https://modusx.de/fitness-uebungen/bicycle-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_cross_crunches",
+      "name": "Cross Crunches",
+      "url": "https://modusx.de/fitness-uebungen/bicycle-crunches/cross-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_cross_lunges",
+      "name": "Cross Lunge",
+      "url": "https://modusx.de/fitness-uebungen/cross-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_cross_lunges_mit_kurzhanteln",
+      "name": "Cross Lunges mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/cross-lunges/cross-lunges-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_cross_lunges_ohne_zusatzgewicht",
+      "name": "Cross Lunges ohne Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/cross-lunges/cross-lunges-ohne-zusatzgewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_cross_body_mountain_climber",
+      "name": "Cross-Body Mountain Climber",
+      "url": "https://modusx.de/fitness-uebungen/mountain-climbers/cross-body-mountain-climber/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_crunch_kniend_am_seil",
+      "name": "Crunch kniend am Seil",
+      "url": "https://modusx.de/fitness-uebungen/cable-crunches/crunch-kniend-am-seil/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_crunches",
+      "name": "Crunches",
+      "url": "https://modusx.de/fitness-uebungen/crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_crunches_am_kabelzug_im_sitzen",
+      "name": "Crunches am Kabelzug im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/cable-crunches/crunches-am-kabelzug-im-sitzen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_crunches_an_crunch_maschine",
+      "name": "Crunches an der Crunch-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/crunches-an-crunch-maschine/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_crunches_auf_dem_boden",
+      "name": "Crunches auf dem Boden",
+      "url": "https://modusx.de/fitness-uebungen/crunches/crunches-auf-dem-boden/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_crunches_mit_bauchtrainer",
+      "name": "Crunches mit dem Bauchtrainer-Gerät",
+      "url": "https://modusx.de/fitness-uebungen/crunches-mit-bauchtrainer/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_crunches_mit_gewicht",
+      "name": "Crunches mit Gewicht",
+      "url": "https://modusx.de/fitness-uebungen/crunches/crunches-mit-gewicht/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_dead_bug",
+      "name": "Dead Bug / Käfer Übung",
+      "url": "https://modusx.de/fitness-uebungen/dead-bug/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_enge_liegestuetze",
+      "name": "Diamond Push Ups / enge Liegestütze",
+      "url": "https://modusx.de/fitness-uebungen/enge-liegestuetze/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_diamond_push_ups",
+      "name": "Diamond Push-Ups",
+      "url": "https://modusx.de/fitness-uebungen/enge-liegestuetze/diamond-push-ups/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_donkey_wadenheben",
+      "name": "Donkey Calf Raises / Donkey Wadenheben",
+      "url": "https://modusx.de/fitness-uebungen/donkey-wadenheben/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_donkey_calf_raises_an_der_maschine",
+      "name": "Donkey Calf Raises an der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/donkey-wadenheben/donkey-calf-raises-an-der-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_donkey_kick_an_der_maschine",
+      "name": "Donkey Kick an der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/po-kickbacks-maschine/donkey-kick-an-der-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_donkey_kickbacks_mit_gestrecktem_bein",
+      "name": "Donkey Kickbacks mit gestrecktem Bein",
+      "url": "https://modusx.de/fitness-uebungen/donkey-kicks/donkey-kickbacks-mit-gestrecktem-bein/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_donkey_kicks",
+      "name": "Donkey Kicks / Kickbacks",
+      "url": "https://modusx.de/fitness-uebungen/donkey-kicks/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_donkey_kicks_multipresse",
+      "name": "Donkey Kicks / Kickbacks an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/donkey-kicks-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_donkey_kicks_kabelzug",
+      "name": "Donkey Kicks am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/donkey-kicks-kabelzug/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_donkey_wadenheben_einbeinig",
+      "name": "Donkey Wadenheben einbeinig",
+      "url": "https://modusx.de/fitness-uebungen/donkey-wadenheben/donkey-wadenheben-einbeinig/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_donkey_wadenheben_mit_partner",
+      "name": "Donkey Wadenheben mit Partner",
+      "url": "https://modusx.de/fitness-uebungen/donkey-wadenheben/donkey-wadenheben-mit-partner/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_dynamische_bicycle_crunches",
+      "name": "Dynamische Bicycle Crunches",
+      "url": "https://modusx.de/fitness-uebungen/bicycle-crunches/dynamische-bicycle-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_einbeinige_box_squats",
+      "name": "Einbeinige Box-Squats",
+      "url": "https://modusx.de/fitness-uebungen/box-squat/einbeinige-box-squats/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_einbeinige_kniebeuge",
+      "name": "Einbeinige Kniebeuge",
+      "url": "https://modusx.de/fitness-uebungen/einbeinige-kniebeuge/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_einbeinige_kniebeuge_mit_kurzhanteln",
+      "name": "Einbeinige Kniebeuge (mit Kurzhanteln)",
+      "url": "https://modusx.de/fitness-uebungen/einbeinige-kniebeuge/einbeinige-kniebeuge-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_einbeiniges_beckenheben",
+      "name": "Einbeiniges Beckenheben",
+      "url": "https://modusx.de/fitness-uebungen/beckenheben/einbeiniges-beckenheben/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_einbeiniges_kreuzheben",
+      "name": "Einbeiniges Kreuzheben",
+      "url": "https://modusx.de/fitness-uebungen/einbeiniges-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_einbeiniges_kreuzheben_mit_der_langhantel",
+      "name": "Einbeiniges Kreuzheben mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/einbeiniges-kreuzheben/einbeiniges-kreuzheben-mit-der-langhantel/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_einbeiniges_kreuzheben_mit_kurzhanteln",
+      "name": "Einbeiniges Kreuzheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/einbeiniges-kreuzheben/einbeiniges-kreuzheben-mit-kurzhanteln/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_einfache_liegestuetze_fuer_anfaenger_frauenliegestuetze",
+      "name": "Einfache Liegestütze für Anfänger (Frauenliegestütze)",
+      "url": "https://modusx.de/fitness-uebungen/liegestuetze/einfache-liegestuetze-fuer-anfaenger-frauenliegestuetze/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_ellenbogen_zum_knie_side_plank",
+      "name": "Ellenbogen zum Knie Side Plank",
+      "url": "https://modusx.de/fitness-uebungen/side-plank-crunches/ellenbogen-zum-knie-side-plank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_enge_squats_an_der_squat_maschine",
+      "name": "Enge Squats an der Squat-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/hackenschmidt-kniebeuge/enge-squats-an-der-squat-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_enges_bankdruecken",
+      "name": "Enges Bankdrücken",
+      "url": "https://modusx.de/fitness-uebungen/enges-bankdruecken/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel",
+        "Multipresse",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_enges_bankdruecken_an_der_multipresse",
+      "name": "Enges Bankdrücken an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/enges-bankdruecken/enges-bankdruecken-an-der-multipresse/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_enges_bankdruecken_mit_der_langhantel",
+      "name": "Enges Bankdrücken mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/enges-bankdruecken/enges-bankdruecken-mit-der-langhantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_enges_bankdruecken_mit_der_sz_stange",
+      "name": "Enges Bankdrücken mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/enges-bankdruecken/enges-bankdruecken-mit-der-sz-stange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_enges_rudern_am_kabelzug",
+      "name": "Enges Rudern am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/rudern-am-kabelzug-sitzend/enges-rudern-am-kabelzug/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_face_pulls",
+      "name": "Face Pulls",
+      "url": "https://modusx.de/fitness-uebungen/face-pulls/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_face_pulls_am_kabelzug",
+      "name": "Face Pulls am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/face-pulls/face-pulls-am-kabelzug/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_face_pulls_mit_dem_theraband",
+      "name": "Face Pulls mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/face-pulls/face-pulls-mit-dem-theraband/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_feuerhydrant_kicks",
+      "name": "Feuerhydrant-Kicks / Dirty Dog",
+      "url": "https://modusx.de/fitness-uebungen/feuerhydrant-kicks/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_finger_curls",
+      "name": "Finger Curls",
+      "url": "https://modusx.de/fitness-uebungen/finger-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_finger_curls_hinter_dem_ruecken",
+      "name": "Finger-Curls hinter dem Rücken",
+      "url": "https://modusx.de/fitness-uebungen/finger-curls/finger-curls-hinter-dem-ruecken/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_finger_curls_mit_einer_hantelscheibe",
+      "name": "Finger-Curls mit einer Hantelscheibe",
+      "url": "https://modusx.de/fitness-uebungen/finger-curls/finger-curls-mit-einer-hantelscheibe/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_finger_curls_sitzend",
+      "name": "Finger-Curls sitzend",
+      "url": "https://modusx.de/fitness-uebungen/finger-curls/finger-curls-sitzend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_fliegende",
+      "name": "Fliegende mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-fliegende/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_fliegende_fuer_die_mittlere_brust",
+      "name": "Fliegende mit Kurzhanteln auf der Flachbank",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-fliegende/kurzhantel-fliegende-fuer-die-mittlere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_flutter_kicks",
+      "name": "Flutter Kicks",
+      "url": "https://modusx.de/fitness-uebungen/flutter-kicks/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_flutter_kicks_fuer_den_bauch",
+      "name": "Flutter Kicks für den Bauch",
+      "url": "https://modusx.de/fitness-uebungen/flutter-kicks/flutter-kicks-fuer-den-bauch/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_french_press",
+      "name": "French Press / Stirndrücken / Skull Crushers",
+      "url": "https://modusx.de/fitness-uebungen/french-press/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_french_press_mit_dem_kabelzug",
+      "name": "French Press mit dem Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/french-press/french-press-mit-dem-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_french_press_mit_der_langhantel",
+      "name": "French Press mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/french-press/french-press-mit-der-langhantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_french_press_mit_der_sz_stange",
+      "name": "French Press mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/french-press/french-press-mit-der-sz-stange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_french_press_mit_kurzhanteln",
+      "name": "French Press mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/french-press/french-press-mit-kurzhanteln/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_frog_pumps",
+      "name": "Frog Pumps",
+      "url": "https://modusx.de/fitness-uebungen/frog-pumps/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_front_squat",
+      "name": "Front Squats / Frontkniebeuge",
+      "url": "https://modusx.de/fitness-uebungen/front-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_front_step_ups",
+      "name": "Front Step-Ups",
+      "url": "https://modusx.de/fitness-uebungen/step-ups/front-step-ups/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "Langhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_kabelzug_frontheben",
+      "name": "Frontheben am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/kabelzug-frontheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_theraband_frontheben",
+      "name": "Frontheben mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/theraband-frontheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_frontheben_mit_der_kurzhantel_einarmig",
+      "name": "Frontheben mit der Kurzhantel einarmig",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-frontheben/frontheben-mit-der-kurzhantel-einarmig/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_frontheben",
+      "name": "Frontheben mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-frontheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_gewichtsscheibe_frontheben",
+      "name": "Frontheben mit Gewichtsscheibe",
+      "url": "https://modusx.de/fitness-uebungen/gewichtsscheibe-frontheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_kurzhantel_frontheben",
+      "name": "Frontheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-frontheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_fussdrehen_in_die_mitte_dehnen",
+      "name": "Fußdrehen in die Mitte (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/fussdrehen-in-die-mitte-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_gerade_crunches_auf_der_bank",
+      "name": "Gerade Crunches auf der Bank",
+      "url": "https://modusx.de/fitness-uebungen/crunches/gerade-crunches-auf-der-bank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_gestrecktes_kreuzheben",
+      "name": "Gestrecktes Kreuzheben",
+      "url": "https://modusx.de/fitness-uebungen/gestrecktes-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_gestrecktes_kreuzheben_mit_kurzhanteln",
+      "name": "Gestrecktes Kreuzheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-kreuzheben/gestrecktes-kreuzheben-mit-kurzhanteln/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_glute_flutter_kicks_fuer_den_po",
+      "name": "Glute Flutter Kicks für den Po",
+      "url": "https://modusx.de/fitness-uebungen/flutter-kicks/glute-flutter-kicks-fuer-den-po/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_glute_ham_raises",
+      "name": "Glute Ham Raises",
+      "url": "https://modusx.de/fitness-uebungen/glute-ham-raises/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_good_mornings",
+      "name": "Good Mornings",
+      "url": "https://modusx.de/fitness-uebungen/good-mornings/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_good_mornings_mit_dem_theraband",
+      "name": "Good Mornings mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/good-mornings/good-mornings-mit-dem-theraband/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_good_mornings_mit_der_langhantel",
+      "name": "Good Mornings mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/good-mornings/good-mornings-mit-der-langhantel/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_hackenschmidt_kniebeuge",
+      "name": "Hackenschmidt Kniebeuge an der Hackenschmidt-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/hackenschmidt-kniebeuge/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hackenschmidt_kniebeuge_mit_neutralem_stand",
+      "name": "Hackenschmidt Kniebeuge mit neutralem Stand",
+      "url": "https://modusx.de/fitness-uebungen/hackenschmidt-kniebeuge/hackenschmidt-kniebeuge-mit-neutralem-stand/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hammer_curls",
+      "name": "Hammer Curls",
+      "url": "https://modusx.de/fitness-uebungen/hammer-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_hammer_curls_am_geraet",
+      "name": "Hammer Curls am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/bizepsmaschine-bizeps-curls/hammer-curls-am-geraet/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hammer_curls_mit_der_trizepsstange",
+      "name": "Hammer Curls mit der Trizepsstange",
+      "url": "https://modusx.de/fitness-uebungen/hammer-curls/hammer-curls-mit-der-trizepsstange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_hammer_curls_mit_kurzhanteln_stehend",
+      "name": "Hammer Curls mit Kurzhanteln stehend",
+      "url": "https://modusx.de/fitness-uebungen/hammer-curls/hammer-curls-mit-kurzhanteln-stehend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_hammer_curls_auf_der_schraegbank",
+      "name": "Hammer-Curls auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-bizeps-curls-schraegbank/hammer-curls-auf-der-schraegbank/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_handstand_push_up",
+      "name": "Handstand Push-Up",
+      "url": "https://modusx.de/fitness-uebungen/handstand-push-up/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hawaian_squat",
+      "name": "Hawaian Squat",
+      "url": "https://modusx.de/fitness-uebungen/einbeinige-kniebeuge/hawaian-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_heel_touches",
+      "name": "Heel-Touches",
+      "url": "https://modusx.de/fitness-uebungen/heel-touches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_high_knee_walking_lunges",
+      "name": "High Knee Walking Lunges",
+      "url": "https://modusx.de/fitness-uebungen/walking-lunges/high-knee-walking-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_am_beinstrecker",
+      "name": "Hip Thrust am Beinstrecker",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-geraet/hip-thrust-am-beinstrecker/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_geraet",
+      "name": "Hip Thrust am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-geraet/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_an_der_bank",
+      "name": "Hip Thrust an der Bank",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-ohne-geraete/hip-thrust-an-der-bank/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_an_der_hip_thrust_maschine",
+      "name": "Hip Thrust an der Hip-Thrust-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-geraet/hip-thrust-an-der-hip-thrust-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_ohne_geraete",
+      "name": "Hip Thrust für Zuhause (ohne Geräte)",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-ohne-geraete/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kurzhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_langhantel",
+      "name": "Hip Thrust mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_multipresse",
+      "name": "Hip Thrust mit der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_mit_theraband",
+      "name": "Hip Thrust mit Theraband",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-ohne-geraete/hip-thrust-mit-theraband/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_hip_thrust_mit_theraband_und_kurzhanteln",
+      "name": "Hip Thrust mit Theraband und Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/hip-thrust-ohne-geraete/hip-thrust-mit-theraband-und-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_hip_lift",
+      "name": "Hip-Lift",
+      "url": "https://modusx.de/fitness-uebungen/hip-lift/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hueftheben",
+      "name": "Hüftheben",
+      "url": "https://modusx.de/fitness-uebungen/hueftheben/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hueftheben_auf_dem_boden",
+      "name": "Hüftheben auf dem Boden",
+      "url": "https://modusx.de/fitness-uebungen/hueftheben/hueftheben-auf-dem-boden/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hueftheben_auf_der_bank",
+      "name": "Hüftheben auf der Bank",
+      "url": "https://modusx.de/fitness-uebungen/hueftheben/hueftheben-auf-der-bank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_hueftheben_seitlich_auf_dem_boden",
+      "name": "Hüftheben seitlich auf dem Boden",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-hueftheben/hueftheben-seitlich-auf-dem-boden/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_hueftrollen",
+      "name": "Hüftrollen",
+      "url": "https://modusx.de/fitness-uebungen/hueftrollen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_rueckenstrecken_am_geraet",
+      "name": "Hyperextensions / Rückenstrecken am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/rueckenstrecken-am-geraet/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_hyperextensions_auf_der_hyperextension_bank",
+      "name": "Hyperextensions auf der Hyperextension-Bank",
+      "url": "https://modusx.de/fitness-uebungen/rueckenstrecken-am-geraet/hyperextensions-auf-der-hyperextension-bank/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_jack_split_crunch",
+      "name": "Jack Split Crunch",
+      "url": "https://modusx.de/fitness-uebungen/klappmesser/jack-split-crunch/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_jumping_lunge_high_knee",
+      "name": "Jumping Lunge High Knee",
+      "url": "https://modusx.de/fitness-uebungen/jumping-lunges/jumping-lunge-high-knee/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_jumping_lunge_mit_stop",
+      "name": "Jumping Lunge mit Stop",
+      "url": "https://modusx.de/fitness-uebungen/jumping-lunges/jumping-lunge-mit-stop/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_jumping_lunges",
+      "name": "Jumping Lunges",
+      "url": "https://modusx.de/fitness-uebungen/jumping-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_jumping_split_lunge",
+      "name": "Jumping Split Lunge",
+      "url": "https://modusx.de/fitness-uebungen/jumping-lunges/jumping-split-lunge/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_kabelcurls_mit_stange_und_seil_am_tiefen_block",
+      "name": "Kabelcurls mit Stange und Seil am tiefen Block",
+      "url": "https://modusx.de/fitness-uebungen/cable-curls/kabelcurls-mit-stange-und-seil-am-tiefen-block/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_kabelrudern_mit_breitem_griff",
+      "name": "Kabelrudern mit breitem Griff",
+      "url": "https://modusx.de/fitness-uebungen/rudern-am-kabelzug-sitzend/kabelrudern-mit-breitem-griff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_kerze",
+      "name": "Kerze",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-liegend/kerze/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_kettlebell_deadlift",
+      "name": "Kettlebell Deadlift",
+      "url": "https://modusx.de/fitness-uebungen/kettlebell-deadlift/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_kettlebell_squat",
+      "name": "Kettlebell Squat",
+      "url": "https://modusx.de/fitness-uebungen/kettlebell-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_kettlebell_swing",
+      "name": "Kettlebell Swing",
+      "url": "https://modusx.de/fitness-uebungen/kettlebell-swing/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_kettlebell_schulterdruecken_einarmig",
+      "name": "Kettlebell-Schulterdrücken einarmig",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-kettlebells/kettlebell-schulterdruecken-einarmig/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_kickbacks_mit_einer_kurzhantel",
+      "name": "Kickbacks mit einer Kurzhantel",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-kickbacks-kurzhanteln/kickbacks-mit-einer-kurzhantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kickbacks_mit_gestrecktem_bein_am_geraet",
+      "name": "Kickbacks mit gestrecktem Bein am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/po-kickbacks-maschine/kickbacks-mit-gestrecktem-bein-am-geraet/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_kickbacks_mit_zwei_kurzhanteln",
+      "name": "Kickbacks mit zwei Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-kickbacks-kurzhanteln/kickbacks-mit-zwei-kurzhanteln/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_klappmesser",
+      "name": "Klappmesser / Jackknife / V-Ups",
+      "url": "https://modusx.de/fitness-uebungen/klappmesser/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klappmesser_auf_dem_ball",
+      "name": "Klappmesser auf dem Ball",
+      "url": "https://modusx.de/fitness-uebungen/klappmesser/klappmesser-auf-dem-ball/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_klassische_arnold_dips",
+      "name": "Klassische Arnold Dips",
+      "url": "https://modusx.de/fitness-uebungen/arnold-dips/klassische-arnold-dips/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_lunges_mit_gewicht",
+      "name": "Klassische Ausfallschritte mit Gewicht",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges-mit-gewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_klassische_ausfallschritte_mit_theraband",
+      "name": "Klassische Ausfallschritte mit Theraband",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges/klassische-ausfallschritte-mit-theraband/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_klassische_bizeps_curls_auf_der_schraegbank",
+      "name": "Klassische Bizeps-Curls auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-bizeps-curls-schraegbank/klassische-bizeps-curls-auf-der-schraegbank/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_klassische_butterfly_crunches",
+      "name": "Klassische Butterfly-Crunches",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-crunches/klassische-butterfly-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_curls_an_der_bizepsmaschine",
+      "name": "Klassische Curls an der Bizepsmaschine",
+      "url": "https://modusx.de/fitness-uebungen/bizepsmaschine-bizeps-curls/klassische-curls-an-der-bizepsmaschine/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_klassische_donkey_kicks",
+      "name": "Klassische Donkey Kicks",
+      "url": "https://modusx.de/fitness-uebungen/donkey-kicks/klassische-donkey-kicks/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_enge_trizeps_liegestuetze",
+      "name": "Klassische enge Trizeps-Liegestütze",
+      "url": "https://modusx.de/fitness-uebungen/enge-liegestuetze/klassische-enge-trizeps-liegestuetze/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_klimmzuege_mit_obergriff",
+      "name": "Klassische Klimmzüge mit Obergriff",
+      "url": "https://modusx.de/fitness-uebungen/klimmzuege/klassische-klimmzuege-mit-obergriff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_klassische_lunges",
+      "name": "Klassische Lunges / Ausfallschritte",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_lunges_mit_high_knee",
+      "name": "Klassische Lunges mit High Knee",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges/klassische-lunges-mit-high-knee/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_mountain_climber",
+      "name": "Klassische Mountain Climber",
+      "url": "https://modusx.de/fitness-uebungen/mountain-climbers/klassische-mountain-climber/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_russian_twists",
+      "name": "Klassische Russian Twists",
+      "url": "https://modusx.de/fitness-uebungen/russian-twist/klassische-russian-twists/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_side_plank_crunches",
+      "name": "Klassische Side Plank Crunches",
+      "url": "https://modusx.de/fitness-uebungen/side-plank-crunches/klassische-side-plank-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_trizeps_kickbacks_am_kabelzug",
+      "name": "Klassische Trizeps-Kickbacks am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-kickbacks-kabelzug/klassische-trizeps-kickbacks-am-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_klassische_v_ups",
+      "name": "Klassische V-Ups",
+      "url": "https://modusx.de/fitness-uebungen/klappmesser/klassische-v-ups/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_walking_lunges",
+      "name": "Klassische Walking Lunges",
+      "url": "https://modusx.de/fitness-uebungen/walking-lunges/klassische-walking-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassischen_langhantel_kniebeugen_mit_box",
+      "name": "Klassischen Langhantel-Kniebeugen mit Box",
+      "url": "https://modusx.de/fitness-uebungen/box-squat/klassischen-langhantel-kniebeugen-mit-box/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_klassisches_beckenheben_beidbeinig",
+      "name": "Klassisches Beckenheben (beidbeinig)",
+      "url": "https://modusx.de/fitness-uebungen/beckenheben/klassisches-beckenheben-beidbeinig/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassisches_beinheben_fuer_die_bauchmuskeln",
+      "name": "Klassisches Beinheben für die Bauchmuskeln",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-liegend/klassisches-beinheben-fuer-die-bauchmuskeln/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassisches_einarmiges_kurzhantel_rudern",
+      "name": "Klassisches einarmiges Kurzhantel Rudern",
+      "url": "https://modusx.de/fitness-uebungen/klassisches-einarmiges-kurzhantel-rudern/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_klassisches_kreuzheben",
+      "name": "Klassisches Kreuzheben",
+      "url": "https://modusx.de/fitness-uebungen/klassisches-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_klassisches_kreuzheben_mit_kurzhanteln",
+      "name": "Klassisches Kreuzheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-kreuzheben/klassisches-kreuzheben-mit-kurzhanteln/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_klassische_latziehen_zur_brust",
+      "name": "Klassisches Latziehen zur Brust",
+      "url": "https://modusx.de/fitness-uebungen/latziehen-zur-brust/klassische-latziehen-zur-brust/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_klassisches_t_bar_rudern_mit_der_langhantel",
+      "name": "Klassisches T-Bar-Rudern mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/t-bar-rudern/klassisches-t-bar-rudern-mit-der-langhantel/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_klimmzuege",
+      "name": "Klimmzüge",
+      "url": "https://modusx.de/fitness-uebungen/klimmzuege/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_klimmzuege_mit_breitem_griff_pull_up",
+      "name": "Klimmzüge mit breitem Griff / Pull Ups",
+      "url": "https://modusx.de/fitness-uebungen/klimmzuege/klimmzuege-mit-breitem-griff-pull-up/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_klimmzuege_mit_parallelgriff_hammergriff",
+      "name": "Klimmzüge mit Parallelgriff / Hammergriff",
+      "url": "https://modusx.de/fitness-uebungen/klimmzuege/klimmzuege-mit-parallelgriff-hammergriff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_klimmzuege_untergriff_chin_up",
+      "name": "Klimmzüge mit Untergriff / Chin Ups",
+      "url": "https://modusx.de/fitness-uebungen/klimmzuege/klimmzuege-untergriff-chin-up/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_multipresse_kniebeuge",
+      "name": "Kniebeugen an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/multipresse-kniebeuge/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_kniebeuge",
+      "name": "Kniebeugen mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-kniebeuge/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kniebeugen_ohne_gewicht",
+      "name": "Kniebeugen ohne Gewicht / Air Squat",
+      "url": "https://modusx.de/fitness-uebungen/kniebeugen-ohne-gewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_knieheben_am_geraet",
+      "name": "Knieheben am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/knieheben-am-geraet/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_knieheben_am_geraet_klassisch",
+      "name": "Knieheben am Gerät (klassische)",
+      "url": "https://modusx.de/fitness-uebungen/knieheben-am-geraet/knieheben-am-geraet-klassisch/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_knieheben_am_geraet_fuer_die_seitlichen_bauchmuskeln",
+      "name": "Knieheben am Gerät für die seitlichen Bauchmuskeln",
+      "url": "https://modusx.de/fitness-uebungen/knieheben-am-geraet/knieheben-am-geraet-fuer-die-seitlichen-bauchmuskeln/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_knieheben_liegend",
+      "name": "Knieheben im Liegen",
+      "url": "https://modusx.de/fitness-uebungen/knieheben-liegend/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_konzentrationscurls",
+      "name": "Konzentrationscurls",
+      "url": "https://modusx.de/fitness-uebungen/konzentrationscurls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_konzentrationscurls_mit_dem_theraband",
+      "name": "Konzentrationscurls mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/theraband-bizeps-curls/konzentrationscurls-mit-dem-theraband/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_konzentrationscurls_mit_der_sz_stange",
+      "name": "Konzentrationscurls mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/konzentrationscurls/konzentrationscurls-mit-der-sz-stange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_multipresse_kreuzheben",
+      "name": "Kreuzheben an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/multipresse-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_kreuzheben",
+      "name": "Kreuzheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_flachbankdruecken",
+      "name": "Kurzhantel Bankdrücken (Flachbank)",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-flachbankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_bizeps_curls_klassisch",
+      "name": "Kurzhantel Bizeps-Curls (klassisch)",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-bizeps-curls-klassisch/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_bizeps_curls_schraegbank",
+      "name": "Kurzhantel Bizeps-Curls auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-bizeps-curls-schraegbank/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_curls_mit_dem_bizeps_isolator",
+      "name": "Kurzhantel Curls mit dem Bizeps Isolator",
+      "url": "https://modusx.de/fitness-uebungen/blaster-bizeps-curls/kurzhantel-curls-mit-dem-bizeps-isolator/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_curls_stehend",
+      "name": "Kurzhantel Curls stehend",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-bizeps-curls-klassisch/kurzhantel-curls-stehend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_positive_kurzhantel_fliegende_fuer_die_obere_brust",
+      "name": "Kurzhantel Fliegende auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-fliegende/positive-kurzhantel-fliegende-fuer-die-obere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_hammercurls_aufrecht_sitzend",
+      "name": "Kurzhantel Hammercurls aufrecht sitzend",
+      "url": "https://modusx.de/fitness-uebungen/hammer-curls/kurzhantel-hammercurls-aufrecht-sitzend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_konzentrationscurls",
+      "name": "Kurzhantel Konzentrationscurls",
+      "url": "https://modusx.de/fitness-uebungen/konzentrationscurls/kurzhantel-konzentrationscurls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_rudern_schraegbank",
+      "name": "Kurzhantel Rudern auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-rudern-schraegbank/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_schraegbankdruecken",
+      "name": "Kurzhantel Schrägbankdrücken",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-schraegbankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_ueberzuege",
+      "name": "Kurzhantel Überzüge / Dumbbell Pullover",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-ueberzuege/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_unterarmcurls",
+      "name": "Kurzhantel Unterarmcurls",
+      "url": "https://modusx.de/fitness-uebungen/unterarm-curls/kurzhantel-unterarmcurls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_frontheben_beidarmig",
+      "name": "Kurzhantel-Frontheben beidarmig",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-frontheben/kurzhantel-frontheben-beidarmig/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_seitheben_im_sitzen",
+      "name": "Kurzhantel-Seitheben im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-seitheben/kurzhantel-seitheben-im-sitzen/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_seitheben_im_stehen",
+      "name": "Kurzhantel-Seitheben im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-seitheben/kurzhantel-seitheben-im-stehen/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_flachbankdruecken",
+      "name": "Langhantel Bankdrücken (Flachbank)",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-flachbankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_bizeps_curls_mit_dem_arm_blaster",
+      "name": "Langhantel Bizeps-Curls mit dem Arm Blaster",
+      "url": "https://modusx.de/fitness-uebungen/blaster-bizeps-curls/langhantel-bizeps-curls-mit-dem-arm-blaster/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_bizeps_curls_mit_engem_griff",
+      "name": "Langhantel Bizeps-Curls mit engem Griff",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-curls/langhantel-bizeps-curls-mit-engem-griff/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_curls_fuer_den_bizeps_klassisch",
+      "name": "Langhantel Curls für den Bizeps (klassisch)",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-curls/langhantel-curls-fuer-den-bizeps-klassisch/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_frontheben_im_stehen",
+      "name": "Langhantel Frontheben im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-frontheben/langhantel-frontheben-im-stehen/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_schraegbankdruecken",
+      "name": "Langhantel Schrägbankdrücken",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-schraegbankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_curls",
+      "name": "Langhantel-Curls",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantelrudern_mit_obergriff",
+      "name": "Langhantel-Rudern mit Obergriff",
+      "url": "https://modusx.de/fitness-uebungen/langhantelrudern/langhantelrudern-mit-obergriff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantelrudern_mit_untergriff",
+      "name": "Langhantel-Rudern mit Untergriff",
+      "url": "https://modusx.de/fitness-uebungen/langhantelrudern/langhantelrudern-mit-untergriff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_rumpfrotation_im_sitzen",
+      "name": "Langhantel-Rumpfrotation im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-langhantel/langhantel-rumpfrotation-im-sitzen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_rumpfrotation_im_stehen",
+      "name": "Langhantel-Rumpfrotation im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-langhantel/langhantel-rumpfrotation-im-stehen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantel_wadenheben_im_stehen",
+      "name": "Langhantel-Wadenheben im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-stehend/langhantel-wadenheben-im-stehen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_langhantelrudern",
+      "name": "Langhantelrudern",
+      "url": "https://modusx.de/fitness-uebungen/langhantelrudern/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_latzug_breit_zur_brust",
+      "name": "Latziehen mit breitem Griff",
+      "url": "https://modusx.de/fitness-uebungen/latziehen-zur-brust/latzug-breit-zur-brust/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_latziehen_enger_griff",
+      "name": "Latziehen mit engem Griff",
+      "url": "https://modusx.de/fitness-uebungen/latziehen-zur-brust/latziehen-enger-griff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_latzug_untergriff",
+      "name": "Latziehen mit Untergriff",
+      "url": "https://modusx.de/fitness-uebungen/latziehen-zur-brust/latzug-untergriff/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_latziehen_zur_brust",
+      "name": "Latziehen zur Brust am Latzug",
+      "url": "https://modusx.de/fitness-uebungen/latziehen-zur-brust/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_leg_curls_im_liegen",
+      "name": "Leg Curls im Liegen",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-maschine/leg-curls-im-liegen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_leg_curls_mit_dem_theraband",
+      "name": "Leg Curls mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/beincurls-kabel/leg-curls-mit-dem-theraband/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_leg_raises_liegend_mit_partner",
+      "name": "Leg raises liegend mit Partner",
+      "url": "https://modusx.de/fitness-uebungen/beinheben-liegend/leg-raises-liegend-mit-partner/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_klassische_liegestuetze",
+      "name": "Liegestütze",
+      "url": "https://modusx.de/fitness-uebungen/liegestuetze/klassische-liegestuetze/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_liegestuetze",
+      "name": "Liegestütze / Push Ups",
+      "url": "https://modusx.de/fitness-uebungen/liegestuetze/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_lunge_wadendehnen_dehnen",
+      "name": "Lunge Wadendehnen (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/lunge-wadendehnen-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_military_press",
+      "name": "Military Press / Überkopfdrücken",
+      "url": "https://modusx.de/fitness-uebungen/military-press/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_military_press_im_stehen",
+      "name": "Military Press im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/military-press/military-press-im-stehen/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Langhantel",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_monster_walk",
+      "name": "Monster Walk",
+      "url": "https://modusx.de/fitness-uebungen/monster-walk/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_mountain_climber_an_den_trx_seilen",
+      "name": "Mountain Climber an den TRX Seilen",
+      "url": "https://modusx.de/fitness-uebungen/mountain-climbers/mountain-climber-an-den-trx-seilen/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_mountain_climber_mit_weiten_beinen",
+      "name": "Mountain Climber mit weiten Beinen",
+      "url": "https://modusx.de/fitness-uebungen/mountain-climbers/mountain-climber-mit-weiten-beinen/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_mountain_climbers",
+      "name": "Mountain Climbers",
+      "url": "https://modusx.de/fitness-uebungen/mountain-climbers/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_negativ_langhantel_bankdruecken",
+      "name": "Negativ Bankdrücken mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/negativ-langhantel-bankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_negativ_kurzhantel_bankdruecken",
+      "name": "Negativ Bankdrücken mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/negativ-kurzhantel-bankdruecken/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_negative_kurzhantel_fliegende_fuer_die_untere_brust",
+      "name": "Negativ Fliegende mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-fliegende/negative-kurzhantel-fliegende-fuer-die-untere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_negative_crunches",
+      "name": "Negative Crunches auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/negative-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_negative_liegestuetze_fuer_fortgeschrittene",
+      "name": "Negative Liegestütze",
+      "url": "https://modusx.de/fitness-uebungen/liegestuetze/negative-liegestuetze-fuer-fortgeschrittene/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_negative_sit_ups",
+      "name": "Negative Sit-Ups auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/negative-sit-ups/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_negatives_bankdruecken_an_der_multipresse_fuer_die_untere_brust",
+      "name": "Negatives Bankdrücken an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/multipresse-bankdruecken/negatives-bankdruecken-an-der-multipresse-fuer-die-untere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_nordic_ham_curls_am_geraet",
+      "name": "Nordic Ham Curls am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/nordic-hamstring-curls/nordic-ham-curls-am-geraet/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_nordic_hamstring_curls",
+      "name": "Nordic Hamstring Curls",
+      "url": "https://modusx.de/fitness-uebungen/nordic-hamstring-curls/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "ohne Ausrüstung",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_nordic_hamstring_curls_ohne_geraet",
+      "name": "Nordic Hamstring Curls ohne Gerät",
+      "url": "https://modusx.de/fitness-uebungen/nordic-hamstring-curls/nordic-hamstring-curls-ohne-geraet/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_overhead_bizeps_curls_am_hohen_block",
+      "name": "Overhead Bizeps Curls am hohen Block",
+      "url": "https://modusx.de/fitness-uebungen/cable-curls/overhead-bizeps-curls-am-hohen-block/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_pike_push_up",
+      "name": "Pike Push-Up",
+      "url": "https://modusx.de/fitness-uebungen/pike-push-up/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_pistol_squats",
+      "name": "Pistol Squats",
+      "url": "https://modusx.de/fitness-uebungen/einbeinige-kniebeuge/pistol-squats/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_po_kickbacks_am_kabelzug",
+      "name": "Po-Kickbacks am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/po-kickbacks-kabel/po-kickbacks-am-kabelzug/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_po_kickbacks_kabel",
+      "name": "Po-Kickbacks am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/po-kickbacks-kabel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_po_kickbacks_maschine",
+      "name": "Po-Kickbacks an der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/po-kickbacks-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_po_kickbacks_mit_dem_theraband",
+      "name": "Po-Kickbacks mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/po-kickbacks-kabel/po-kickbacks-mit-dem-theraband/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_positive_liegestuetze_mit_leichter_erhoehung",
+      "name": "Positive Liegestütze mit leichter Erhöhung",
+      "url": "https://modusx.de/fitness-uebungen/liegestuetze/positive-liegestuetze-mit-leichter-erhoehung/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_preacher_curls_mit_der_langhantel",
+      "name": "Preacher Curls mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/scott-curls/preacher-curls-mit-der-langhantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_pull_through_kabelzug",
+      "name": "Pull-Through am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/pull-through-kabelzug/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_rerverse_lunge_mit_dem_eigenen_koerpergewicht",
+      "name": "Rerverse Lunge mit dem eigenen Körpergewicht",
+      "url": "https://modusx.de/fitness-uebungen/reverse-lunges/rerverse-lunge-mit-dem-eigenen-koerpergewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_reverse_ausfallschritte_an_der_multipresse",
+      "name": "Reverse Ausfallschritte an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/reverse-lunges/reverse-ausfallschritte-an-der-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_reverse_ausfallschritte_mit_der_langhantel",
+      "name": "Reverse Ausfallschritte mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/reverse-lunges/reverse-ausfallschritte-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_ausfallschritte_nach_hinten_mit_kurzhanteln",
+      "name": "Reverse Ausfallschritte nach hinten mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/reverse-lunges/reverse-ausfallschritte-nach-hinten-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_bizeps_curls",
+      "name": "Reverse Bizeps-Curls",
+      "url": "https://modusx.de/fitness-uebungen/reverse-bizeps-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "SZ-Stange",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_reverse_butterfly_am_kabelzug_von_unten",
+      "name": "Reverse Butterfly am Kabelzug von unten",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-reverse-am-kabelzug/reverse-butterfly-am-kabelzug-von-unten/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_reverse_crunches",
+      "name": "Reverse Crunches",
+      "url": "https://modusx.de/fitness-uebungen/reverse-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_reverse_flys_am_kabelzug_von_oben",
+      "name": "Reverse Flys am Kabelzug von oben",
+      "url": "https://modusx.de/fitness-uebungen/butterfly-reverse-am-kabelzug/reverse-flys-am-kabelzug-von-oben/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_reverse_hyperextensions_am_speziellen_geraet",
+      "name": "Reverse Hyperextensions am speziellen Gerät",
+      "url": "https://modusx.de/fitness-uebungen/reverse-hyperextensions/reverse-hyperextensions-am-speziellen-geraet/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_reverse_hyperextensions_an_der_multipresse",
+      "name": "Reverse Hyperextensions an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/reverse-hyperextensions/reverse-hyperextensions-an-der-multipresse/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_reverse_kurzhantel_unterarmcurls",
+      "name": "Reverse Kurzhantel Unterarmcurls",
+      "url": "https://modusx.de/fitness-uebungen/reverse-unterarm-curls/reverse-kurzhantel-unterarmcurls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_lunges",
+      "name": "Reverse Lunge / Ausfallschritte nach hinten",
+      "url": "https://modusx.de/fitness-uebungen/reverse-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_reverse_lunge_am_seilzug",
+      "name": "Reverse Lunge am Seilzug",
+      "url": "https://modusx.de/fitness-uebungen/reverse-lunges/reverse-lunge-am-seilzug/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_reverse_unterarm_curls",
+      "name": "Reverse Unterarm Curls / Handgelenkstrecken",
+      "url": "https://modusx.de/fitness-uebungen/reverse-unterarm-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_unterarm_curls_mit_dem_kabel_und_theraband",
+      "name": "Reverse Unterarm-Curls mit dem Kabel und Theraband",
+      "url": "https://modusx.de/fitness-uebungen/reverse-unterarm-curls/reverse-unterarm-curls-mit-dem-kabel-und-theraband/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_reverse_unterarm_curls_mit_der_hantel",
+      "name": "Reverse Unterarm-Curls mit der Hantel",
+      "url": "https://modusx.de/fitness-uebungen/reverse-unterarm-curls/reverse-unterarm-curls-mit-der-hantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_crunch_auf_dem_boden",
+      "name": "Reverse-Crunch auf dem Boden",
+      "url": "https://modusx.de/fitness-uebungen/reverse-crunches/reverse-crunch-auf-dem-boden/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_reverse_crunch_im_sitzen_auf_der_bank",
+      "name": "Reverse-Crunch im Sitzen auf der Bank",
+      "url": "https://modusx.de/fitness-uebungen/reverse-crunches/reverse-crunch-im-sitzen-auf-der-bank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_reverse_crunches_auf_der_schraegbank",
+      "name": "Reverse-Crunches auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/reverse-crunches/reverse-crunches-auf-der-schraegbank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_reverse_curls_am_kabelzug",
+      "name": "Reverse-Curls am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/reverse-bizeps-curls/reverse-curls-am-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_reverse_curls_an_der_bizepsmaschine",
+      "name": "Reverse-Curls an der Bizepsmaschine",
+      "url": "https://modusx.de/fitness-uebungen/reverse-bizeps-curls/reverse-curls-an-der-bizepsmaschine/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_reverse_curls_mit_der_langhantel",
+      "name": "Reverse-Curls mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/reverse-bizeps-curls/reverse-curls-mit-der-langhantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_curls_mit_der_sz_stange",
+      "name": "Reverse-Curls mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/reverse-bizeps-curls/reverse-curls-mit-der-sz-stange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_reverse_curls_mit_kurzhanteln",
+      "name": "Reverse-Curls mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/reverse-bizeps-curls/reverse-curls-mit-kurzhanteln/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_reverse_hyperextensions",
+      "name": "Reverse-Hyperextensions",
+      "url": "https://modusx.de/fitness-uebungen/reverse-hyperextensions/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Multipresse",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_rumpfrotation_twist_maschine",
+      "name": "Rotation an der Twist-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-twist-maschine/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_rueckenstrecken_an_der_rueckenstrecker_maschine",
+      "name": "Rückenstrecken an der Rückenstrecker-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/rueckenstrecken-am-geraet/rueckenstrecken-an-der-rueckenstrecker-maschine/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_rudern_am_kabelzug_sitzend",
+      "name": "Rudern am Kabelzug (sitzend)",
+      "url": "https://modusx.de/fitness-uebungen/rudern-am-kabelzug-sitzend/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_rudern_sitzend_am_geraet",
+      "name": "Rudern sitzend am Gerät",
+      "url": "https://modusx.de/fitness-uebungen/rudern-sitzend-am-geraet/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_rumaenisches_kreuzheben",
+      "name": "Rumänisches Kreuzheben",
+      "url": "https://modusx.de/fitness-uebungen/rumaenisches-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_rumaenisches_kreuzheben_mit_kurzhanteln",
+      "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-kreuzheben/rumaenisches-kreuzheben-mit-kurzhanteln/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_rumpfrotation_kabelzug",
+      "name": "Rumpfrotation am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-kabelzug/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_rumpfrotation_langhantel",
+      "name": "Rumpfrotation mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-langhantel/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_rumpfrotation_nach_schraeg_oben",
+      "name": "Rumpfrotation nach schräg oben",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-kabelzug/rumpfrotation-nach-schraeg-oben/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_rumpfrotation_nach_schraeg_unten",
+      "name": "Rumpfrotation nach schräg unten",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-kabelzug/rumpfrotation-nach-schraeg-unten/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_rumpfrotation_seitlich_nach_unten",
+      "name": "Rumpfrotation seitlich nach unten",
+      "url": "https://modusx.de/fitness-uebungen/rumpfrotation-kabelzug/rumpfrotation-seitlich-nach-unten/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_russian_twist",
+      "name": "Russian Twist",
+      "url": "https://modusx.de/fitness-uebungen/russian-twist/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_russian_twist_mit_partner",
+      "name": "Russian Twist mit Partner",
+      "url": "https://modusx.de/fitness-uebungen/russian-twist/russian-twist-mit-partner/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_russian_twist_mit_zusatzgewicht",
+      "name": "Russian Twist mit Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/russian-twist/russian-twist-mit-zusatzgewicht/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_brustpresse_fuer_die_obere_brust_aufrecht_sitzend",
+      "name": "Schrägbankdrücken an der Brustpresse",
+      "url": "https://modusx.de/fitness-uebungen/brustpresse/brustpresse-fuer-die-obere-brust-aufrecht-sitzend/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_schraegbankdruecken_an_der_multipresse_fuer_die_obere_brust",
+      "name": "Schrägbankdrücken an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/multipresse-bankdruecken/schraegbankdruecken-an-der-multipresse-fuer-die-obere-brust/",
+      "groups": [
+        "Brust"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_an_maschine",
+      "name": "Schulterdrücken an der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-an-maschine/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_theraband",
+      "name": "Schulterdrücken mit dem Band",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-theraband/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_dem_theraband_im_sitzen",
+      "name": "Schulterdrücken mit dem Theraband im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-theraband/schulterdruecken-mit-dem-theraband-im-sitzen/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_kettlebells",
+      "name": "Schulterdrücken mit der Kettlebell",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-kettlebells/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_kettlebells_beidarmig",
+      "name": "Schulterdrücken mit Kettlebells beidarmig",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-kettlebells/schulterdruecken-mit-kettlebells-beidarmig/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_kurzhanteln",
+      "name": "Schulterdrücken mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-kurzhanteln/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_kurzhanteln_sitzend",
+      "name": "Schulterdrücken mit Kurzhanteln sitzend",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-kurzhanteln/schulterdruecken-mit-kurzhanteln-sitzend/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_schulterdruecken_mit_kurzhanteln_stehend",
+      "name": "Schulterdrücken mit Kurzhanteln stehend",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-kurzhanteln/schulterdruecken-mit-kurzhanteln-stehend/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_scott_curls",
+      "name": "Scott Curls / Preacher Curls",
+      "url": "https://modusx.de/fitness-uebungen/scott-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_scott_curls_am_kabelzug",
+      "name": "Scott Curls am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/scott-curls/scott-curls-am-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_scott_curls_mit_der_sz_stange",
+      "name": "Scott Curls mit der SZ-Stange",
+      "url": "https://modusx.de/fitness-uebungen/scott-curls/scott-curls-mit-der-sz-stange/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_scottcurls_mit_kurzhanteln",
+      "name": "Scottcurls mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/scott-curls/scottcurls-mit-kurzhanteln/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_seitheben_am_kabelzug",
+      "name": "Seitheben am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/seitheben-am-kabelzug/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_seitheben_am_kabelzug_beidarmig",
+      "name": "Seitheben am Kabelzug beidarmig",
+      "url": "https://modusx.de/fitness-uebungen/seitheben-am-kabelzug/seitheben-am-kabelzug-beidarmig/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_seitheben_am_kabelzug_einarmig",
+      "name": "Seitheben am Kabelzug einarmig",
+      "url": "https://modusx.de/fitness-uebungen/seitheben-am-kabelzug/seitheben-am-kabelzug-einarmig/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_seitheben_an_seitheben_maschine",
+      "name": "Seitheben an der Seitheben-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/seitheben-an-seitheben-maschine/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_seitheben",
+      "name": "Seitheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-seitheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_seitlich_liegendes_beinheben_dehnen",
+      "name": "Seitlich liegendes Beinheben (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/seitlich-liegendes-beinheben-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliche_ausfallschritte_mit_der_langhantel",
+      "name": "Seitliche Ausfallschritte mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/side-lunges/seitliche-ausfallschritte-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_seitliche_ausfallschritte_mit_kurzhanteln",
+      "name": "Seitliche Ausfallschritte mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/side-lunges/seitliche-ausfallschritte-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_seitliche_hyperextensions",
+      "name": "Seitliche Hyperextensions",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-oberkoerperbeugen/seitliche-hyperextensions/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_seitliche_sit_ups",
+      "name": "Seitliche Sit-Ups",
+      "url": "https://modusx.de/fitness-uebungen/seitliche-sit-ups/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_beinheben",
+      "name": "Seitliches Beinheben",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-beinheben/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_beinheben_im_liegen",
+      "name": "Seitliches Beinheben im Liegen",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-beinheben/seitliches-beinheben-im-liegen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_beinheben_im_stehen",
+      "name": "Seitliches Beinheben im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-beinheben/seitliches-beinheben-im-stehen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_hueftheben",
+      "name": "Seitliches Hüftheben",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-hueftheben/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_hueftheben_mit_einer_bank",
+      "name": "Seitliches Hüftheben mit einer Bank",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-hueftheben/seitliches-hueftheben-mit-einer-bank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_oberkoerperbeugen",
+      "name": "Seitliches Oberkörperbeugen",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-oberkoerperbeugen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_seitliches_oberkoerperbeugen_mit_dem_kabelzug",
+      "name": "Seitliches Oberkörperbeugen mit dem Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-oberkoerperbeugen/seitliches-oberkoerperbeugen-mit-dem-kabelzug/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_seitliches_oberkoerperbeugen_mit_der_kurzhantel",
+      "name": "Seitliches Oberkörperbeugen mit der Kurzhantel",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-oberkoerperbeugen/seitliches-oberkoerperbeugen-mit-der-kurzhantel/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_seitliches_oberkoerperbeugen_mit_der_langhantel",
+      "name": "Seitliches Oberkörperbeugen mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-oberkoerperbeugen/seitliches-oberkoerperbeugen-mit-der-langhantel/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_seitliches_oberkoerperbeugen_ohne_zusatzgewicht",
+      "name": "Seitliches Oberkörperbeugen ohne Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/seitliches-oberkoerperbeugen/seitliches-oberkoerperbeugen-ohne-zusatzgewicht/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_shoulder_press_im_stehen_mit_dem_band",
+      "name": "Shoulder-Press im Stehen mit dem Band",
+      "url": "https://modusx.de/fitness-uebungen/schulterdruecken-mit-theraband/shoulder-press-im-stehen-mit-dem-band/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_shrugs",
+      "name": "Shrugs / Schulterheben / Nackenziehen",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_shrugs_am_kabelzug",
+      "name": "Shrugs am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/shrugs-am-kabelzug/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_schulterheben_am_shrug_geraet",
+      "name": "Shrugs am Shrug-Gerät",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/schulterheben-am-shrug-geraet/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_shrugs_an_der_multipresse",
+      "name": "Shrugs an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/shrugs-an-der-multipresse/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_shrugs_mit_dem_theraband",
+      "name": "Shrugs mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/shrugs-mit-dem-theraband/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_langhantel_shrugs_barbell_shrugs",
+      "name": "Shrugs mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/langhantel-shrugs-barbell-shrugs/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_shrugs_dumbbell_shrugs",
+      "name": "Shrugs mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/shrugs/kurzhantel-shrugs-dumbbell-shrugs/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_seitliche_crunches",
+      "name": "Side Crunches",
+      "url": "https://modusx.de/fitness-uebungen/seitliche-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_side_lunges",
+      "name": "Side Lunges / seitliche Ausfallschritte",
+      "url": "https://modusx.de/fitness-uebungen/side-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_side_lunges_mit_dem_eigenen_koerpergewicht",
+      "name": "Side Lunges mit dem eigenen Körpergewicht",
+      "url": "https://modusx.de/fitness-uebungen/side-lunges/side-lunges-mit-dem-eigenen-koerpergewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_side_plank_crunches",
+      "name": "Side Plank Crunches",
+      "url": "https://modusx.de/fitness-uebungen/side-plank-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_side_step_ups",
+      "name": "Side Step-Ups",
+      "url": "https://modusx.de/fitness-uebungen/step-ups/side-step-ups/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "Multipresse",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sit_ups",
+      "name": "Sit-Ups",
+      "url": "https://modusx.de/fitness-uebungen/sit-ups/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sit_ups_auf_dem_ball",
+      "name": "Sit-Ups auf dem Ball",
+      "url": "https://modusx.de/fitness-uebungen/sit-ups/sit-ups-auf-dem-ball/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_sit_ups_auf_dem_boden",
+      "name": "Sit-Ups auf dem Boden",
+      "url": "https://modusx.de/fitness-uebungen/sit-ups/sit-ups-auf-dem-boden/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sit_ups_mit_partner",
+      "name": "Sit-Ups mit Partner",
+      "url": "https://modusx.de/fitness-uebungen/sit-ups/sit-ups-mit-partner/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sitzendes_langhantel_frontheben",
+      "name": "Sitzendes Langhantel-Frontheben",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-frontheben/sitzendes-langhantel-frontheben/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_sitzendes_wadendehnen_durch_zehen_beruehren_dehnen",
+      "name": "Sitzendes Wadendehnen durch Zehen berühren (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/sitzendes-wadendehnen-durch-zehen-beruehren-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_skater_squat",
+      "name": "Skater Squat",
+      "url": "https://modusx.de/fitness-uebungen/einbeinige-kniebeuge/skater-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_spiderman_plank",
+      "name": "Spiderman Plank",
+      "url": "https://modusx.de/fitness-uebungen/spiderman-plank/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_split_squat",
+      "name": "Split Squat",
+      "url": "https://modusx.de/fitness-uebungen/split-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_split_squats_mit_der_langhantel",
+      "name": "Split Squats mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/split-squat/split-squats-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_split_squats_mit_kurzhanteln",
+      "name": "Split Squats mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/split-squat/split-squats-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_split_squats_ohne_zusatzgewicht",
+      "name": "Split Squats ohne Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/split-squat/split-squats-ohne-zusatzgewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_squat_adduktorendehnen_dehnen",
+      "name": "Squat Adduktorendehnen (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/squat-adduktorendehnen-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_squat_jump",
+      "name": "Squat Jump",
+      "url": "https://modusx.de/fitness-uebungen/squat-jump/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_langhantel_kniebeuge",
+      "name": "Squats / Kniebeugen mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/langhantel-kniebeuge/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_standard_lunges",
+      "name": "Standard Lunges",
+      "url": "https://modusx.de/fitness-uebungen/klassische-lunges/standard-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_stehendes_adduktorendehnen_dehnen",
+      "name": "Stehendes Adduktorendehnen (dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/adduktoren-dehnen/stehendes-adduktorendehnen-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_step_ups",
+      "name": "Step-Ups / Aufsteiger",
+      "url": "https://modusx.de/fitness-uebungen/step-ups/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sumo_kniebeugen_mit_der_langhantel",
+      "name": "Sumo Kniebeugen mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/sumo-squat/sumo-kniebeugen-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_sumo_kniebeugen_mit_kurzhanteln",
+      "name": "Sumo Kniebeugen mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/sumo-squat/sumo-kniebeugen-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_sumo_kreuzheben",
+      "name": "Sumo Kreuzheben",
+      "url": "https://modusx.de/fitness-uebungen/sumo-kreuzheben/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_sumo_kreuzheben_mit_kurzhanteln",
+      "name": "Sumo Kreuzheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/kurzhantel-kreuzheben/sumo-kreuzheben-mit-kurzhanteln/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_sumo_squat",
+      "name": "Sumo Squat",
+      "url": "https://modusx.de/fitness-uebungen/sumo-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sumo_squats_an_der_multipresse",
+      "name": "Sumo Squats an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/sumo-squat/sumo-squats-an-der-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_sumo_squats_ohne_gewicht",
+      "name": "Sumo Squats ohne Gewicht",
+      "url": "https://modusx.de/fitness-uebungen/sumo-squat/sumo-squats-ohne-gewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_rueckenstrecken_liegend",
+      "name": "Superman: Rückenstrecken im liegen",
+      "url": "https://modusx.de/fitness-uebungen/rueckenstrecken-liegend/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_sz_curls",
+      "name": "SZ-Curls",
+      "url": "https://modusx.de/fitness-uebungen/sz-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_sz_curls_sitzend",
+      "name": "SZ-Curls sitzend",
+      "url": "https://modusx.de/fitness-uebungen/sz-curls/sz-curls-sitzend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_sz_curls_stehend",
+      "name": "SZ-Curls stehend",
+      "url": "https://modusx.de/fitness-uebungen/sz-curls/sz-curls-stehend/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "SZ-Stange"
+      ]
+    },
+    {
+      "id": "mx_t_bar_rudern",
+      "name": "T-Bar Rudern",
+      "url": "https://modusx.de/fitness-uebungen/t-bar-rudern/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_t_bar_rudern_an_der_maschine",
+      "name": "T-Bar-Rudern an der Maschine",
+      "url": "https://modusx.de/fitness-uebungen/t-bar-rudern/t-bar-rudern-an-der-maschine/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_theraband_bizeps_curls",
+      "name": "Theraband Bizeps Curls",
+      "url": "https://modusx.de/fitness-uebungen/theraband-bizeps-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_theraband_bizeps_curls_im_stehen",
+      "name": "Theraband Bizeps Curls im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/theraband-bizeps-curls/theraband-bizeps-curls-im-stehen/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_theraband_bizeps_curls_im_sitzen",
+      "name": "Theraband Bizeps-Curls im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/theraband-bizeps-curls/theraband-bizeps-curls-im-sitzen/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_toe_touches_im_sitzen",
+      "name": "Toe Touches im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/toe-touches/toe-touches-im-sitzen/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_toe_touches",
+      "name": "Toe-Touches",
+      "url": "https://modusx.de/fitness-uebungen/toe-touches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_toe_touches_im_stehen_gerade_nach_unten",
+      "name": "Toe-Touches im Stehen gerade nach unten",
+      "url": "https://modusx.de/fitness-uebungen/toe-touches/toe-touches-im-stehen-gerade-nach-unten/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_toe_touches_twist_windmuehle",
+      "name": "Toe-Touches Twist / Windmühle",
+      "url": "https://modusx.de/fitness-uebungen/toe-touches/toe-touches-twist-windmuehle/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_trap_bar_deadlift",
+      "name": "Trap-Bar Deadlift",
+      "url": "https://modusx.de/fitness-uebungen/trap-bar-deadlift/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_trizeps_dips",
+      "name": "Trizeps Dips",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-dips/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_dips_fuer_den_trizeps_haengend_an_der_dipmaschine",
+      "name": "Trizeps-Dips hängend am Dip-Barren",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-dips/dips-fuer-den-trizeps-haengend-an-der-dipmaschine/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_trizeps_dips_haengend_mit_zusatzgewicht",
+      "name": "Trizeps-Dips hängend mit Zusatzgewicht",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-dips/trizeps-dips-haengend-mit-zusatzgewicht/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_trizeps_dips_kniend_auf_dem_dip_geraet",
+      "name": "Trizeps-Dips kniend auf dem Dip-Barren",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-dips/trizeps-dips-kniend-auf-dem-dip-geraet/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_trizeps_kickbacks_kabelzug",
+      "name": "Trizeps-Kickbacks am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-kickbacks-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_trizeps_kickbacks_mit_dem_theraband",
+      "name": "Trizeps-Kickbacks mit dem Theraband",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-kickbacks-kabelzug/trizeps-kickbacks-mit-dem-theraband/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_trizeps_kickbacks_kurzhanteln",
+      "name": "Trizeps-Kickbacks mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/trizeps-kickbacks-kurzhanteln/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_trizeps_pushdowns_am_kabel",
+      "name": "Trizepsdrücken am Kabel: Pushdown",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-kabelzug/trizeps-pushdowns-am-kabel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_trizepsdruecken_ueber_kopf_am_kabelzug",
+      "name": "Trizepsdrücken am Kabel: über dem Kopf",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-kabelzug/trizepsdruecken-ueber-kopf-am-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_trizepsdruecken_kabelzug",
+      "name": "Trizepsdrücken am Kabelzug",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-kabelzug/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_trizepsdruecken_trizepsmaschine",
+      "name": "Trizepsdrücken an der Trizepsmaschine",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-trizepsmaschine/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_kurzhantel_trizepsdruecken_mit_beiden_armen",
+      "name": "Trizepsdrücken mit der Kurzhantel beidarmig",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-kurzhanteln/kurzhantel-trizepsdruecken-mit-beiden-armen/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_einarmiges_trizepsdruecken_mit_der_kurzhantel",
+      "name": "Trizepsdrücken mit der Kurzhantel einarmig",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-kurzhanteln/einarmiges-trizepsdruecken-mit-der-kurzhantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_trizepsdruecken_kurzhanteln",
+      "name": "Trizepsdrücken mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/trizepsdruecken-kurzhanteln/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_ueberkopfdruecken_mit_der_langhantel_im_sitzen",
+      "name": "Überkopfdrücken mit der Langhantel im Sitzen",
+      "url": "https://modusx.de/fitness-uebungen/military-press/ueberkopfdruecken-mit-der-langhantel-im-sitzen/",
+      "groups": [
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_ueberzuege_am_kabel_stehend",
+      "name": "Überzüge am Kabel (stehend)",
+      "url": "https://modusx.de/fitness-uebungen/ueberzuege-am-kabel-stehend/",
+      "groups": [
+        "Brust",
+        "Rücken"
+      ],
+      "equipment": [
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_umgekehrtes_rueckenstrecken_auf_der_bank",
+      "name": "Umgekehrtes Rückenstrecken auf der Bank",
+      "url": "https://modusx.de/fitness-uebungen/reverse-hyperextensions/umgekehrtes-rueckenstrecken-auf-der-bank/",
+      "groups": [
+        "Beine",
+        "Rücken"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank"
+      ]
+    },
+    {
+      "id": "mx_umgekehrtes_zehendruecken_dehnen",
+      "name": "Umgekehrtes Zehendrücken (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/umgekehrtes-zehendruecken-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_unterarm_curls",
+      "name": "Unterarm Curls / Wrist Curls",
+      "url": "https://modusx.de/fitness-uebungen/unterarm-curls/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kabelturm",
+        "Kurzhantel",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_unterarm_curls_hinter_dem_ruecken",
+      "name": "Unterarm-Curls hinter dem Rücken",
+      "url": "https://modusx.de/fitness-uebungen/unterarm-curls/unterarm-curls-hinter-dem-ruecken/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Kabelturm",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_unterarm_curls_mit_dem_kabel_und_theraband",
+      "name": "Unterarm-Curls mit dem Kabel und Theraband",
+      "url": "https://modusx.de/fitness-uebungen/unterarm-curls/unterarm-curls-mit-dem-kabel-und-theraband/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "Kabelturm"
+      ]
+    },
+    {
+      "id": "mx_unterarm_curls_mit_der_hantel",
+      "name": "Unterarm-Curls mit der Hantel",
+      "url": "https://modusx.de/fitness-uebungen/unterarm-curls/unterarm-curls-mit-der-hantel/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_unterschenkel_dehnen_mit_dem_theraband_dehnen",
+      "name": "Unterschenkel dehnen mit dem Theraband (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/unterschenkel-dehnen-mit-dem-theraband-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_v_crunches",
+      "name": "V-Crunches",
+      "url": "https://modusx.de/fitness-uebungen/v-crunches/",
+      "groups": [
+        "Bauch"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_vertical_mountain_climber",
+      "name": "Vertical Mountain Climber",
+      "url": "https://modusx.de/fitness-uebungen/mountain-climbers/vertical-mountain-climber/",
+      "groups": [
+        "Bauch",
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_vorgebeugtes_kurzhantel_rudern",
+      "name": "Vorgebeugtes Rudern mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/vorgebeugtes-kurzhantel-rudern/",
+      "groups": [
+        "Rücken"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_vorgebeugtes_seitheben_auf_der_schraegbank",
+      "name": "Vorgebeugtes Seitheben auf der Schrägbank",
+      "url": "https://modusx.de/fitness-uebungen/vorgebeugtes-seitheben-mit-kurzhanteln/vorgebeugtes-seitheben-auf-der-schraegbank/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_vorgebeugtes_seitheben_im_stehen",
+      "name": "Vorgebeugtes Seitheben im Stehen",
+      "url": "https://modusx.de/fitness-uebungen/vorgebeugtes-seitheben-mit-kurzhanteln/vorgebeugtes-seitheben-im-stehen/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_vorgebeugtes_seitheben_mit_kurzhanteln",
+      "name": "Vorgebeugtes Seitheben mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/vorgebeugtes-seitheben-mit-kurzhanteln/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_vorgebeugtes_seitheben_sitzend",
+      "name": "Vorgebeugtes Seitheben sitzend",
+      "url": "https://modusx.de/fitness-uebungen/vorgebeugtes-seitheben-mit-kurzhanteln/vorgebeugtes-seitheben-sitzend/",
+      "groups": [
+        "Rücken",
+        "Schulter"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_waden_dehnen",
+      "name": "Waden dehnen",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband",
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadendehnen_am_wadenblock_dehnen",
+      "name": "Wadendehnen am Wadenblock (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadendehnen-am-wadenblock-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadendehnen_an_der_treppe_dehnen",
+      "name": "Wadendehnen an der Treppe (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadendehnen-an-der-treppe-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadendehnen_auf_der_bank_dehnen",
+      "name": "Wadendehnen auf der Bank (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadendehnen-auf-der-bank-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadendehnen_beim_lehnen_gegen_die_wand_dehnen",
+      "name": "Wadendehnen beim Lehnen gegen die Wand (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadendehnen-beim-lehnen-gegen-die-wand-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadendehnen_in_startposition_dehnen",
+      "name": "Wadendehnen in Startposition (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadendehnen-in-startposition-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_an_der_45_grad_beinpresse",
+      "name": "Wadenheben an der 45-Grad Beinpresse",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-beinpresse/wadenheben-an-der-45-grad-beinpresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_beinpresse",
+      "name": "Wadenheben an der Beinpresse",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-beinpresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_an_der_beinpresse_horizontal",
+      "name": "Wadenheben an der Beinpresse (horizontal)",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-beinpresse/wadenheben-an-der-beinpresse-horizontal/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_hackenschmidt_maschine",
+      "name": "Wadenheben an der Hackenschmidt-Maschine",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-hackenschmidt-maschine/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_maschine_sitzend",
+      "name": "Wadenheben Maschine (sitzend)",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-sitzend/wadenheben-maschine-sitzend/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_maschine_stehend",
+      "name": "Wadenheben Maschine (stehend)",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-stehend/wadenheben-maschine-stehend/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_sitzend",
+      "name": "Wadenheben sitzend",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-sitzend/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_sitzend_an_der_multipresse",
+      "name": "Wadenheben sitzend an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-sitzend/wadenheben-sitzend-an-der-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_sitzend_mit_der_langhantel",
+      "name": "Wadenheben sitzend mit der Langhantel",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-sitzend/wadenheben-sitzend-mit-der-langhantel/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Langhantel"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_sitzend_mit_kurzhanteln",
+      "name": "Wadenheben sitzend mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-sitzend/wadenheben-sitzend-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Hantelbank",
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_stehend",
+      "name": "Wadenheben stehend",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-stehend/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel",
+        "Langhantel",
+        "Multipresse",
+        "ohne Ausrüstung",
+        "Trainingsmaschine"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_stehend_an_der_multipresse",
+      "name": "Wadenheben stehend an der Multipresse",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-stehend/wadenheben-stehend-an-der-multipresse/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Multipresse"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_stehend_mit_eigenem_koerpergewicht",
+      "name": "Wadenheben stehend mit eigenem Körpergewicht",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-stehend/wadenheben-stehend-mit-eigenem-koerpergewicht/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wadenheben_stehend_mit_kurzhanteln",
+      "name": "Wadenheben stehend mit Kurzhanteln",
+      "url": "https://modusx.de/fitness-uebungen/wadenheben-stehend/wadenheben-stehend-mit-kurzhanteln/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Kurzhantel"
+      ]
+    },
+    {
+      "id": "mx_wadenmuskel_dehnen_liegend_mit_dem_band_dehnen",
+      "name": "Wadenmuskel dehnen liegend mit dem Band (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadenmuskel-dehnen-liegend-mit-dem-band-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_wadenmuskel_dehnen_sitzend_mit_dem_band_dehnen",
+      "name": "Wadenmuskel dehnen sitzend mit dem Band (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/wadenmuskel-dehnen-sitzend-mit-dem-band-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Fitnessband"
+      ]
+    },
+    {
+      "id": "mx_walking_lunges",
+      "name": "Walking Lunges / Ausfallschritte im Gehen",
+      "url": "https://modusx.de/fitness-uebungen/walking-lunges/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_wrist_roller",
+      "name": "Wrist Roller",
+      "url": "https://modusx.de/fitness-uebungen/wrist-roller/",
+      "groups": [
+        "Arme"
+      ],
+      "equipment": []
+    },
+    {
+      "id": "mx_zehendruecken_gegen_die_wand_dehnen",
+      "name": "Zehendrücken gegen die Wand (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/zehendruecken-gegen-die-wand-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_zehenheben",
+      "name": "Zehenheben",
+      "url": "https://modusx.de/fitness-uebungen/zehenheben/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_zehenstrecken_im_sitzen_dehnen",
+      "name": "Zehenstrecken im Sitzen (Dehnen)",
+      "url": "https://modusx.de/fitness-uebungen/waden-dehnen/zehenstrecken-im-sitzen-dehnen/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "ohne Ausrüstung"
+      ]
+    },
+    {
+      "id": "mx_zercher_squat",
+      "name": "Zercher Squat",
+      "url": "https://modusx.de/fitness-uebungen/zercher-squat/",
+      "groups": [
+        "Beine"
+      ],
+      "equipment": [
+        "Langhantel"
+      ]
+    }
+  ]
+}
