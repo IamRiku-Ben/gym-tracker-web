@@ -1,14 +1,14 @@
-import { catalog,byId, dayNames, plans } from './catalog.js?v=0.4.0';
-import {workoutFromSession,sessionFromWorkout} from './form-model.js?v=0.4.0';
-import {ArchiveSync} from './archive-sync.js?v=0.4.1';
-import {validate as validateWorkout,pathFor,today} from './core.js?v=0.4.1';
-import {defaultPlanData,validatePlans,validateEditorDraft,scheduledUnit,sessionForUnit,canRefreshTemplate,recordPlanChange,planPath} from './training-plans.js?v=0.4.0';
-import {PlanEditor} from './plan-editor.js?v=0.4.0';
-import {syncPlanRecord,ensureExerciseRegistry} from './plan-sync.js?v=0.4.0';
-import {createConfirmation} from './confirm-action.js?v=0.4.0';
+import {buildExerciseLibrary,metadataLine} from './exercise-metadata.js?v=0.5.0';
+import { catalog,byId, dayNames, plans } from './catalog.js?v=0.5.0';
+import {workoutFromSession,sessionFromWorkout} from './form-model.js?v=0.5.0';
+import {ArchiveSync} from './archive-sync.js?v=0.5.0';
+import {validate as validateWorkout,pathFor,today} from './core.js?v=0.5.0';
+import {defaultPlanData,validatePlans,validateEditorDraft,scheduledUnit,sessionForUnit,canRefreshTemplate,recordPlanChange,planPath} from './training-plans.js?v=0.5.0';
+import {PlanEditor} from './plan-editor.js?v=0.5.0';
+import {syncPlanRecord,ensureExerciseRegistry} from './plan-sync.js?v=0.5.0';
+import {createConfirmation} from './confirm-action.js?v=0.5.0';
 const directory=await fetch('./exercise-directory.json').then(r=>{if(!r.ok)throw Error('Übungskatalog fehlt');return r.json()});
-const exerciseLibrary=[...catalog];
-for(const e of directory.exercises){if(!/^[a-z0-9_]+$/.test(e.id)||byId.has(e.id)||new URL(e.url).hostname!=='modusx.de')continue;const meta={id:e.id,en:e.name,de:e.name,basis:'unknown',increment:2.5,rest:90,groups:e.groups,equipment:e.equipment,url:e.url};byId.set(meta.id,meta);exerciseLibrary.push(meta);}
+const exerciseLibrary=buildExerciseLibrary(catalog,directory,byId);
 const seedHistory=[];
 const schema=await fetch('./workout.schema.json').then(r=>{if(!r.ok)throw Error('Schema fehlt');return r.json()});
 let archive, syncMessage='Noch nicht verbunden';
@@ -37,7 +37,7 @@ function formatDate(s) { return new Intl.DateTimeFormat('de-DE', { weekday: 'lon
 function num(x) { return typeof x === 'number' ? x : Number(String(x).replace(',', '.')); }
 function kgLabel(x) { return String(x).replace('.', ','); }
 function esc(x) { return String(x ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
-function lookupName(id) { return byId.get(id)?.en || id.replaceAll('_', ' '); }
+function lookupName(id) { return byId.get(id)?.de || id.replaceAll('_', ' '); }
 const basisLabel = { total: 'Gesamtgewicht', per_side: 'Gewicht je Seite', dumbbell_each: 'Je Kurzhantel', machine_display: 'Maschinenanzeige', bodyweight: 'Zusatzgewicht', unknown: 'Gewicht' };
 function openDatabase() {
     return new Promise((resolve, reject) => {
@@ -142,7 +142,7 @@ function previousLabel(id) {
     return `${new Date(previous.date + 'T12:00').toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' })} · ${weights} kg · ${sets.map(s => s.reps).join('/')}`;
 }
 function createHeader() {
-    return `<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-copy"><strong>GYM TRACKER</strong><small>MOBILE · V0.4</small></span></div><div class="topbar-right"><span class="connection ${navigator.onLine ? 'online' : 'offline'}" id="network-indicator"><span class="dot"></span>${navigator.onLine ? 'Online' : 'Offline'}</span><span id="save-status" class="save-status good">Lokal gespeichert</span></div></div></header>`;
+    return `<header class="topbar"><div class="topbar-inner"><div class="brand"><span class="brand-mark">G<span>.</span></span><span class="brand-copy"><strong>GYM TRACKER</strong><small>MOBILE · V0.5</small></span></div><div class="topbar-right"><span class="connection ${navigator.onLine ? 'online' : 'offline'}" id="network-indicator"><span class="dot"></span>${navigator.onLine ? 'Online' : 'Offline'}</span><span id="save-status" class="save-status good">Lokal gespeichert</span></div></div></header>`;
 }
 function createNav() {
     const tabs = [['training', 'Training', '▦'], ['plans','Pläne','▤'], ['history', 'Verlauf', '▥'], ['settings', 'Einstellungen', '⚙']];
@@ -166,10 +166,10 @@ function createTraining() {
 function createExercise(e, i) {
     const meta = byId.get(e.id);
     const completed = e.sets.filter(x => x.done).length;
-    return `<article class="exercise-card card ${!e.enabled ? 'inactive' : ''}" data-exercise="${esc(e.id)}"><div class="exercise-header"><div class="exercise-index">${String(i + 1).padStart(2, '0')}</div><div class="exercise-title"><h2>${esc(meta?.en || lookupName(e.id))}</h2><p class="translation">${esc(meta?.de!==meta?.en?meta?.de||'':'')}</p></div><label class="toggle" title="Übung aktivieren oder überspringen"><input type="checkbox" data-scope="exercise" data-id="${esc(e.id)}" data-field="enabled" ${e.enabled ? 'checked' : ''}><span></span></label></div>
+    return `<article class="exercise-card card ${!e.enabled ? 'inactive' : ''}" data-exercise="${esc(e.id)}"><div class="exercise-header"><div class="exercise-index">${String(i + 1).padStart(2, '0')}</div><div class="exercise-title"><h2>${esc(meta?.de || lookupName(e.id))}</h2><p class="translation">${esc(metadataLine(meta))}</p></div><label class="toggle" title="Übung aktivieren oder überspringen"><input type="checkbox" data-scope="exercise" data-id="${esc(e.id)}" data-field="enabled" ${e.enabled ? 'checked' : ''}><span></span></label></div>
  ${e.enabled ? `<div class="exercise-meta"><div><span class="label-small">LETZTES MAL</span><span class="previous-result">${esc(previousLabel(e.id))}</span></div><div class="mini-done"><strong>${completed}/${e.sets.length}</strong><small>SÄTZE</small></div></div>
  ${e.targetReps?`<p class="target-reps">Geplant: ${e.sets.length} × ${esc(e.targetReps)} Wdh. · nur abgehakte Sätze zählen</p>`:''}
- <div class="rest-row"><span>◷ &nbsp; Satzpause</span><select data-scope="exercise" data-id="${esc(e.id)}" data-field="restSeconds" aria-label="Satzpause ${esc(meta?.en || e.id)}">${[...new Set([0,60,90,120,150,180,240,e.restSeconds])].sort((a,b)=>a-b).map(s => `<option value="${s}" ${e.restSeconds === s ? 'selected' : ''}>${s} Sek.</option>`).join('')}</select></div>
+ <div class="rest-row"><span>◷ &nbsp; Satzpause</span><select data-scope="exercise" data-id="${esc(e.id)}" data-field="restSeconds" aria-label="Satzpause ${esc(meta?.de || e.id)}">${[...new Set([0,60,90,120,150,180,240,e.restSeconds])].sort((a,b)=>a-b).map(s => `<option value="${s}" ${e.restSeconds === s ? 'selected' : ''}>${s} Sek.</option>`).join('')}</select></div>
  <div class="set-table"><div class="set-head"><span>SATZ</span><span>GEWICHT <small>KG</small></span><span>WDH.</span><span>FERTIG</span></div>
  ${e.sets.map((s, j) => `<div class="set-row ${s.done ? 'is-done' : ''}"><div class="set-number">${String(j + 1).padStart(2, '0')}</div><div class="stepper"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="kg" data-delta="-${meta?.increment || 2.5}" aria-label="Gewicht reduzieren">−</button><input type="text" inputmode="decimal" data-scope="set" data-id="${esc(e.id)}" data-index="${j}" data-field="kg" value="${esc(kgLabel(s.kg))}" aria-label="Gewicht Satz ${j + 1}"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="kg" data-delta="${meta?.increment || 2.5}" aria-label="Gewicht erhöhen">+</button></div><div class="stepper"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="reps" data-delta="-1" aria-label="Wiederholungen reduzieren">−</button><input type="text" inputmode="numeric" data-scope="set" data-id="${esc(e.id)}" data-index="${j}" data-field="reps" value="${esc(s.reps)}" aria-label="Wiederholungen Satz ${j + 1}"><button type="button" class="step-btn" data-action="adjust" data-id="${esc(e.id)}" data-index="${j}" data-field="reps" data-delta="1" aria-label="Wiederholungen erhöhen">+</button></div><label class="done-label"><input aria-label="Satz erledigt" type="checkbox" data-scope="set" data-id="${esc(e.id)}" data-index="${j}" data-field="done" ${s.done ? 'checked' : ''}><span class="check-square">✓</span></label></div>`).join('')}
  </div>
@@ -182,16 +182,16 @@ function exerciseComparison(e) {
     const old = previousExercise(e.id, date,e.basis)?.exercise;
     const done = e.sets.filter(s => s.done);
     if (!done.length)
-        return { title: meta?.en || e.id, detail: 'Nicht absolviert', tone: 'muted' };
+        return { title: meta?.de || e.id, detail: 'Nicht absolviert', tone: 'muted' };
     const reps = done.reduce((n, s) => n + num(s.reps), 0);
     if (!old)
-        return { title: meta?.en || e.id, detail: `${done.length} Sätze · ${reps} Wiederholungen. Noch kein Vergleichswert.`, tone: 'neutral' };
+        return { title: meta?.de || e.id, detail: `${done.length} Sätze · ${reps} Wiederholungen. Noch kein Vergleichswert.`, tone: 'neutral' };
     const same = done.length === old.sets.length && done.every((s, i) => num(s.kg) === old.sets[i].weight_kg);
     if (!same)
-        return { title: meta?.en || e.id, detail: `${done.length} Sätze protokolliert. Gewicht oder Satzanzahl verändert – direkter Wiederholungsvergleich nicht sinnvoll.`, tone: 'neutral' };
+        return { title: meta?.de || e.id, detail: `${done.length} Sätze protokolliert. Gewicht oder Satzanzahl verändert – direkter Wiederholungsvergleich nicht sinnvoll.`, tone: 'neutral' };
     const oldRep = old.sets.reduce((n, s) => n + s.reps, 0);
     const delta = reps - oldRep;
-    return { title: meta?.en || e.id, detail: delta > 0 ? `+${delta} Wiederholungen bei gleichem Gewicht und gleicher Satzzahl.` : delta < 0 ? `${delta} Wiederholungen bei gleichem Gewicht – Technik und Erholung prüfen.` : 'Wiederholungsleistung gegenüber dem letzten Mal gehalten.', tone: delta > 0 ? 'positive' : delta < 0 ? 'caution' : 'neutral' };
+    return { title: meta?.de || e.id, detail: delta > 0 ? `+${delta} Wiederholungen bei gleichem Gewicht und gleicher Satzzahl.` : delta < 0 ? `${delta} Wiederholungen bei gleichem Gewicht – Technik und Erholung prüfen.` : 'Wiederholungsleistung gegenüber dem letzten Mal gehalten.', tone: delta > 0 ? 'positive' : delta < 0 ? 'caution' : 'neutral' };
 }
 function createFazit() {
     const done = session.exercises.filter(e => e.enabled && e.sets.some(s => s.done));
@@ -217,7 +217,7 @@ function createSettings() {
  <div class="info-box"><strong>Mobile Formularbasis</strong><p>Funktioniert: Training, Notizen, Referenzwerte, Offline-Speicherung, lokales Fazit und JSON-Export. GitHub-Sync ist verfügbar. Ein automatisches KI-Fazit und Hintergrund-Push sind nicht enthalten.</p></div></section>`;
 }
 function render() {
-    app.innerHTML = `${createHeader()}<div class="layout"><main>${currentPage === 'training' ? createTraining() :currentPage==='plans'?planEditor.view(planRecord): currentPage === 'history' ? createHistory() : createSettings()}</main><div class="footer-note">GYM TRACKER V0.4 · LOKAL + PRIVATES ARCHIV · <span>BUILT FOR PROGRESS</span></div></div>${createNav()}${toastMessage ? `<div class="toast" role="status">${esc(toastMessage)}</div>` : ''}`;
+    app.innerHTML = `${createHeader()}<div class="layout"><main>${currentPage === 'training' ? createTraining() :currentPage==='plans'?planEditor.view(planRecord): currentPage === 'history' ? createHistory() : createSettings()}</main><div class="footer-note">GYM TRACKER V0.5 · LOKAL + PRIVATES ARCHIV · <span>BUILT FOR PROGRESS</span></div></div>${createNav()}${toastMessage ? `<div class="toast" role="status">${esc(toastMessage)}</div>` : ''}`;
     updateSaveIndicator();
     if(syncRunning)app.querySelectorAll('input,select,textarea,button').forEach(el=>el.disabled=true);
 }
