@@ -1,4 +1,4 @@
-import {GitHub,pathFor,validate} from './core.js?v=0.4.0';
+import {GitHub,pathFor,validate} from './core.js?v=0.4.1';
 import {workoutFromSession,isSameWorkout,sessionFromWorkout} from './form-model.js?v=0.4.0';
 export class ArchiveSync {
   constructor({get,all,put,flush,onSaved,schema,byId}){Object.assign(this,{get,all,put,flush,onSaved,schema,byId});this.client=null;this.busy=false;}

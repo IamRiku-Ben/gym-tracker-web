@@ -1,7 +1,7 @@
 import { catalog,byId, dayNames, plans } from './catalog.js?v=0.4.0';
 import {workoutFromSession,sessionFromWorkout} from './form-model.js?v=0.4.0';
-import {ArchiveSync} from './archive-sync.js?v=0.4.0';
-import {validate as validateWorkout,pathFor,today} from './core.js?v=0.4.0';
+import {ArchiveSync} from './archive-sync.js?v=0.4.1';
+import {validate as validateWorkout,pathFor,today} from './core.js?v=0.4.1';
 import {defaultPlanData,validatePlans,validateEditorDraft,scheduledUnit,sessionForUnit,canRefreshTemplate,recordPlanChange,planPath} from './training-plans.js?v=0.4.0';
 import {PlanEditor} from './plan-editor.js?v=0.4.0';
 import {syncPlanRecord,ensureExerciseRegistry} from './plan-sync.js?v=0.4.0';

@@ -26,7 +26,7 @@ export function validate(value,schema,root=schema,path='$') {
   if(schema.type==='boolean'&&typeof value!=='boolean')fail();
   return value;
 }
-export const encode=value=>btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(value,null,2)+'\n')));
+export function encode(value){const bytes=new TextEncoder().encode(JSON.stringify(value,null,2)+'\n');let binary='';for(let offset=0;offset<bytes.length;offset+=32768)binary+=String.fromCharCode(...bytes.subarray(offset,offset+32768));return btoa(binary);}
 export const decode=value=>JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(value.replace(/\s/g,'')),c=>c.charCodeAt(0))));
 export class GitHub {
   constructor(token,request=fetch){this.token=token;this.request=request;}
