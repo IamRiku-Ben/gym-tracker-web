@@ -1,5 +1,5 @@
-import {planPath,validatePlans} from './training-plans.js?v=0.5.0';
-import {normalizeExerciseRegistry} from './exercise-metadata.js?v=0.5.0';
+import {planPath,validatePlans} from './training-plans.js?v=0.5.1';
+import {normalizeExerciseRegistry} from './exercise-metadata.js?v=0.5.1';
 export async function ensureExerciseRegistry(client,exerciseIds,byId){
  const remote=await client.read('data/exercises.json');
  const data=normalizeExerciseRegistry(remote?.data,exerciseIds,byId);

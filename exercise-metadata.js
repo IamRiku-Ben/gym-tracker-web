@@ -4,7 +4,7 @@ export function metadataLine(meta){
  return [...new Set([meta?.groups?.join(' · '),meta?.equipment?.join(' · '),meta?.variant,meta?.match==='general'?'Allgemeiner MODUSX-Eintrag':null].filter(Boolean))].join(' · ');
 }
 export function buildExerciseLibrary(catalog,directory,byId){
- const library=[...catalog],represented=new Set(catalog.map(e=>e.modusxId));
+ const library=[...catalog],represented=new Set(catalog.filter(e=>!e.variant&&e.match==='source').map(e=>e.modusxId));
  for(const e of directory.exercises){
   if(!/^[a-z0-9_]+$/.test(e.id)||new URL(e.url).hostname!=='modusx.de')throw Error('Ungültige MODUSX-Übung');
   const meta={id:e.id,de:e.name,basis:'unknown',increment:2.5,rest:90,groups:e.groups,equipment:e.equipment,url:e.url,modusxId:e.id,match:'source',variant:''};
